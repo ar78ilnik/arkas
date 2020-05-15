@@ -1,0 +1,17 @@
+.user {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 33%;
+    height: 20px;
+  }
+
+  &__card {
+    background-image: url("../img/card.svg");
+  }
+}
