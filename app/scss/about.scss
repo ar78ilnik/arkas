@@ -1,0 +1,19 @@
+.about {
+    background-color: #7c2344;
+
+    background-image: url(../img/) &__title {
+        color: white;
+        font-size: calc((18 / 16) * 100%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    &__text {
+        font-size: calc((14 / 16) * 100%);
+        font-weight: 300;
+        line-height: calc((26 / 16) * 100%);
+        color: white;
+        padding: 20px 20px 20px 20px;
+    }
+}

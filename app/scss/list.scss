@@ -1,3 +1,39 @@
 .list {
-  display: none;
+    &__about {
+        background-color: #fff;
+        display: flex;
+        height: 80px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__link {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        width: 65px;
+        height: 65px;
+
+        &_youtube {
+            background-image: url(../img/youtube-big.png);
+        }
+
+        &_insta {
+            background-image: url(../img/insta-big.png);
+        }
+
+        &_face {
+            background-image: url(../img/face-big.png);
+        }
+    }
+
+    &__text {
+        padding-top: 20px;
+    }
+
 }

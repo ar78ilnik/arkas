@@ -2,372 +2,418 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Аркас</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="utf-8">
+    <title>Аркас</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="body container">
-  <svg style="display: none">
-    <symbol id="burger">
-      <line x1="0" y1="1" x2="23" y2="1" style="stroke: #fff; stroke-width: 1px;" />
-      <line x1="0" y1="9" x2="23" y2="9" style="stroke: #fff; stroke-width: 1px;" />
-      <line x1="0" y1="16" x2="23" y2="16" style="stroke: #fff; stroke-width: 1px;" />
-    </symbol>
-    <symbol id="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="485.196" height="485.196">
-        <path d="M85.736 45.479H0v30.327h65.892l106.143 242.599h252.508v-30.321H191.875z" />
-        <path d="M151.628 106.131l60.654 151.631h212.261l60.653-151.631H151.628zM404.05 227.435H232.82l-36.396-90.978H440.42l-36.37 90.978zM227.443 348.737c-25.127 0-45.488 20.372-45.488 45.489 0 25.109 20.36 45.49 45.488 45.49 25.109 0 45.476-20.381 45.476-45.49 0-25.117-20.367-45.489-45.476-45.489zm0 60.649c-8.363 0-15.161-6.81-15.161-15.159 0-8.354 6.797-15.163 15.161-15.163 8.366 0 15.164 6.81 15.164 15.163-.001 8.349-6.798 15.159-15.164 15.159zM379.058 348.737c-25.113 0-45.49 20.372-45.49 45.489 0 25.109 20.377 45.49 45.49 45.49s45.485-20.381 45.485-45.49c0-25.117-20.372-45.489-45.485-45.489zm0 60.649c-8.35 0-15.158-6.81-15.158-15.159 0-8.354 6.809-15.163 15.158-15.163 8.345 0 15.163 6.81 15.163 15.163 0 8.349-6.809 15.159-15.163 15.159z" /></svg>
-    </symbol>
-  </svg>
-  <header class="header">
-    <section class="social">
-      <!--
-      <ul class="list">
-        <li class="list__item">Youtube</li>
-        <li class="list__item">Instagram</li>
-        <li class="list__item">Facebook</li>
-      </ul>
-      -->
-    </section>
-    <nav class="navigation">
-      <button class="button button__nav" type="button">Open</button>
-      <ul class="list list-nav">
-        <li class="list__item">Главная</li>
-        <li class="list__item">Каталог</li>
-        <li class="list__item">Дизайн проекты</li>
-        <li class="list__item">Акции</li>
-        <li class="list__item">Журнал</li>
-      </ul>
-    </nav>
-    <section class="user">
-      <a class="user__link">likes</a>
-      <a href="#" class="user__link">
-        <svg class="icon">
-          <use xlink:href="#card"></use>
-        </svg>
-      </a>
-      <a class="user__link"></a>
-    </section>
-  </header>
-  <main class="main">
-    <div class="slider">
-      <input type="radio" name="point" id="slide1" checked>
-      <input type="radio" name="point" id="slide2">
-      <input type="radio" name="point" id="slide3">
-      <input type="radio" name="point" id="slide4">
-      <div class="slider-items">
-        <div class="slider-item slider-1">
-          <span class="slider-item__title">ВСЕ НАЧИНАЕТСЯ С КУХНИ!</span>
-          <span class="slider-item__name">PRESTIGE</span>
-          <span class="slider-item__from">Оригинальная Италия</span>
-          <div class="slider-item__price">от 420 000 Рублей</div>
-          <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
-        </div>
-        <div class="slider-item slider-2"></div>
-        <div class="slider-item slider-3"></div>
-        <div class="slider-item slider-4"></div>
-      </div>
-      <div class="slider-controls">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-        <label for="slide4"></label>
-      </div>
-    </div>
-    <article class="about">
-      <div class="about__presentation">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__text">Компания Аркас-М специализируется на прямых поставках мебели из Европы. Более 20 лет работы в этой сфере позволяет безошибочно отбирать и предлагать Вам только лучшее. Мы работаем без посредников с более 1000 европейских мебельных фабрик. При выборе производителя мы проводим тщательный анализ будущего партнера, посещаем фабрики-производители с целью ознакомления с производственным процессом.</p>
-      </div>
-      <section class="social">
-        <ul class="list">
-          <li class="list__item">Youtube</li>
-          <li class="list__item">Instagram</li>
-          <li class="list__item">Facebook</li>
-        </ul>
-        <p class="social__text">Будь в курсе последних трендов и веяний в мире дизайна интерьеров. Всегда первым узнавай о наших скидках и акциях.</p>
-      </section>
-    </article>
-    <section class="features">
-      <div class="features__item">Бесплатная доставка по городу</div>
-      <div class="features__item">Разработка дизайн проектов</div>
-      <div class="features__item">25 лет на рынке</div>
-      <div class="features__item">Комплексные интерьерные решения</div>
-      <div class="features__item">Лучшая дизайнерская мебель Италии, Европы, России</div>
-    </section>
-    <section class="trands">
-      <h2 class="trands__title">В тренде</h2>
-      <div class="trands__cards">
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Elam сейчас в тренде из-за геоиетрического рисунка на фасаде</p>
-        </div>
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Dama</p>
-        </div>
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Gran Duca 03</p>
-        </div>
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Regina</p>
-        </div>
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Regina 2</p>
-        </div>
-        <div class="trands__card">
-          <img src="" alt="" class="trands__img">
-          <p class="trands__text">Кухня Gran Duca di Toscana</p>
-        </div>
-      </div>
-    </section>
-    <section class="news">
-      <h2 class="news__title">Подпишитесь на новости</h2>
-      <form action="" class="form">
-        <fieldset>
-          <legend>Всегда быть в курсе последних поступлений и акций</legend>
-          <label>
-            <input type="email" placeholder="Введите ваш e-mail">
-            <button class="button" type="submit">OK</button>
-          </label>
-        </fieldset>
-      </form>
-    </section>
-    <section class="catalog">
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Кухни</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Кухня</a>
-          <a href="" class="catalog__link">Столы обеденные</a>
-          <a href="" class="catalog__link">Стулья</a>
-          <a href="" class="catalog__link">Техника</a>
-        </div>
-        <span class="catalog__text">Идеальное сочетание качества и стиля</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Спальни</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Банкетки, пуфы</a>
-          <a href="" class="catalog__link">Комоды</a>
-          <a href="" class="catalog__link">Консоли</a>
-          <a href="" class="catalog__link">Кровати</a>
-          <a href="" class="catalog__link">Прикроватные тумбы</a>
-          <a href="" class="catalog__link">Стулья</a>
-          <a href="" class="catalog__link">Туалетный стол</a>
-          <a href="" class="catalog__link">Шкафы</a>
-        </div>
-        <span class="catalog__text">Удовольствие, красота и комфорт</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Аксессуары</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Аксессуары для прихожей</a>
-          <a href="" class="catalog__link">Вазы, кашпо</a>
-          <a href="" class="catalog__link">Зеркала</a>
-          <a href="" class="catalog__link">Картины</a>
-          <a href="" class="catalog__link">Подсвечники, свечи</a>
-          <a href="" class="catalog__link">Подставки под цветы</a>
-          <a href="" class="catalog__link">Предметы сервировки</a>
-          <a href="" class="catalog__link">Статуэтки, декоративные предметы</a>
-          <a href="" class="catalog__link">Текстиль, ковры</a>
-          <a href="" class="catalog__link">Цветы</a>
-        </div>
-        <span class="catalog__text">Изысканное дополнение интерьера</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Детские</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Готовые решения</a>
-          <a href="" class="catalog__link">Кровати</a>
-          <a href="" class="catalog__link">Кровати для новорожденных</a>
-          <a href="" class="catalog__link">Модульная система</a>
-          <a href="" class="catalog__link">Пеленальные столы</a>
-          <a href="" class="catalog__link">Посьменные столы</a>
-          <a href="" class="catalog__link">Стулья</a>
-        </div>
-        <span class="catalog__text">Удобство в сочетании с качеством</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Гардеробные</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Гардеробные</a>
-        </div>
-        <span class="catalog__text">Огромный выбор модульных систем</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Ванные</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Комплектующие</a>
-          <a href="" class="catalog__link">Мебель для ванной</a>
-        </div>
-        <span class="catalog__text">Создайте уют и тепло во всем доме</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Гостинные</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Бары, стулья</a>
-          <a href="" class="catalog__link">Витрины</a>
-          <a href="" class="catalog__link">Диваны</a>
-          <a href="" class="catalog__link">Журнальные столики</a>
-          <a href="" class="catalog__link">Комоды</a>
-          <a href="" class="catalog__link">Консоли</a>
-          <a href="" class="catalog__link">Кресла</a>
-          <a href="" class="catalog__link">Модульные системы</a>
-          <a href="" class="catalog__link">Пуфы</a>
-          <a href="" class="catalog__link">Столики для сервировки</a>
-        </div>
-        <span class="catalog__text">Удобство в сочетании с качеством</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Свет</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Бра</a>
-          <a href="" class="catalog__link">Встроенные светильники</a>
-          <a href="" class="catalog__link">Люстры</a>
-          <a href="" class="catalog__link">Настольные лампы</a>
-          <a href="" class="catalog__link">Подвесы</a>
-          <a href="" class="catalog__link">Потолочные светильники</a>
-          <a href="" class="catalog__link">Торшеры</a>
-        </div>
-        <span class="catalog__text">Подберите правильное освещение</span>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Кабинеты</h3>
-        <div class="catalog__block">
-          <a href="" class="catalog__link">Библиотеки</a>
-          <a href="" class="catalog__link">Мягкая мебель</a>
-          <a href="" class="catalog__link">Сейфы</a>
-          <a href="" class="catalog__link">Столы</a>
-          <a href="" class="catalog__link">Стулья</a>
-        </div>
-        <span class="catalog__text">Создайте свое пространство</span>
-      </div>
-      <button class="button" type="button">Увидеть больше</button>
-    </section>
-    <section class="answer">
-      <h2 class="answer__title">Интерьерные решения</h2>
-      <div class="slider answer-slider">
-        <input type="radio" name="point" id="slide1" checked>
-        <input type="radio" name="point" id="slide2">
-        <input type="radio" name="point" id="slide3">
-        <input type="radio" name="point" id="slide4">
-        <div class="slider-items">
-          <div class="slider-item slider-1">
-            <div class="answer-slider__container">
-              <h3 class="answer-slider__title">Апартаменты в гостинице "Интурист"</h3>
-              <div class="answer-slider__from">
-                <h3 class="answer-slider__from-title">Мебель и свет, Италия:</h3>
-                <p class="answer-slider__from-text">Мебель от: Selva, Jumbo Collections,
-                  Angelo Cappellini, Grande Arredo, Gervasoni и Bamax</p>
-                <p class="answer-slider__from-text">Свет от: Ciulli, Archeo Venice Design, Laudarte, Axo Light</p>
-                <button class="button" type="button">Увидеть больше</button>
-              </div>
-              <span class="answer-slider__promo">Элегантная обстановка</span>
-              <p class="answer-slider__text">Силами сотрудников Аркос-М было реализовано наполнение 5 тематических номеров: Презедентский номер, Японский номер, Восточный номер, Конструктивный номер, Английский номер. Каждый номер несёт в себе стилизованный дизайн и продуман до мелочей. Мебель, элементы декора, подсветка… Простота японского интерьера, соседствующая с современным комфортом, роскошь и респектабельность классического номера,сочетание современных и смелых дизайнерских решений конструктивного номера, Арабские арки, расписная мебель, изысканная фурнитура восточного номера не оставит равнодошным никого. </p>
-              <section class="social">
-                <span class="social__text">Поделиться</span>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <section class="social">
                 <ul class="list">
-                  <li class="list__item">Youtube</li>
-                  <li class="list__item">Instagram</li>
-                  <li class="list__item">Facebook</li>
+                    <li class="list__item">Youtube</li>
+                    <li class="list__item">Instagram</li>
+                    <li class="list__item">Facebook</li>
                 </ul>
-              </section>
-              <span class="answer-slider__h4">В дизайне использованы</span>
-              <ul class="answer-slider__list">
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Точечный светильник Laudeate</h4>
-                </li>
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Стол Selva</h4>
-                </li>
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Шкаф под минибар Selva</h4>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="slider-item slider-2">
-            <div class="answer-slider__container">
-              <h3 class="answer-slider__title">Апартаменты в гостинице "Интурист"</h3>
-              <div class="answer-slider__from">
-                <h3 class="answer-slider__from-title">Мебель и свет, Италия:</h3>
-                <p class="answer-slider__from-text">Мебель от: Selva, Jumbo Collections,
-                  Angelo Cappellini, Grande Arredo, Gervasoni и Bamax</p>
-                <p class="answer-slider__from-text">Свет от: Ciulli, Archeo Venice Design, Laudarte, Axo Light</p>
-                <button class="button" type="button">Увидеть больше</button>
-              </div>
-              <span class="answer-slider__promo">Элегантная обстановка</span>
-              <p class="answer-slider__text">Силами сотрудников Аркос-М было реализовано наполнение 5 тематических номеров: Презедентский номер, Японский номер, Восточный номер, Конструктивный номер, Английский номер. Каждый номер несёт в себе стилизованный дизайн и продуман до мелочей. Мебель, элементы декора, подсветка… Простота японского интерьера, соседствующая с современным комфортом, роскошь и респектабельность классического номера,сочетание современных и смелых дизайнерских решений конструктивного номера, Арабские арки, расписная мебель, изысканная фурнитура восточного номера не оставит равнодошным никого. </p>
-              <section class="social">
-                <span class="social__text">Поделиться</span>
-                <ul class="list">
-                  <li class="list__item">Youtube</li>
-                  <li class="list__item">Instagram</li>
-                  <li class="list__item">Facebook</li>
+            </section>
+            <nav class="navigation">
+                <button class="button button__nav" type="button">Open</button>
+                <ul class="list list-nav">
+                    <li class="list__item">Главная</li>
+                    <li class="list__item">Каталог</li>
+                    <li class="list__item">Дизайн проекты</li>
+                    <li class="list__item">Акции</li>
+                    <li class="list__item">Журнал</li>
                 </ul>
-              </section>
-              <span class="answer-slider__h4">В дизайне использованы</span>
-              <ul class="answer-slider__list">
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Точечный светильник Laudeate</h4>
-                </li>
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Стол Selva</h4>
-                </li>
-                <li class="answer-slider__item">
-                  <img src="" alt="" class="answer-slider__img">
-                  <h4 class="answer-slider__h4">Шкаф под минибар Selva</h4>
-                </li>
-              </ul>
+            </nav>
+            <section class="user">
+                <a class="user__link">likes</a>
+                <a href="#" class="user__link"></a>
+                <a class="user__link"></a>
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ВСЕ НАЧИНАЕТСЯ С КУХНИ!</span>
+                    <span class="slider-item__name">PRESTIGE</span>
+                    <span class="slider-item__from">Оригинальная Италия</span>
+                    <div class="slider-item__price">от 420 000</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
             </div>
-          </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
+                    <span class="slider-item__name">Corte ZARI</span>
+                    <span class="slider-item__from">Италия, Россия</span>
+                    <div class="slider-item__price">Качество выше цены</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__name">Кровать Вегас</span>
+                    <span class="slider-item__from">Сделано в России 115 000</span>
+                    <div class="slider-item__price">от 420 000 Рублей</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ЭКСКЛЮЗИВНЫЕ ВОПЛОЩЕНИЯ</span>
+                    <span class="slider-item__name">Exclusive interior design</span>
+                    <span class="slider-item__from">Идеальное сочетание</span>
+                    <div class="slider-item__price">Разработка дизайн проектов</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <a class="prev" onclick="minusSlide()">
+                <svg width="92" height="14">
+                    <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
+                    <line x1="0" y1="7" x2="15" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
+                    <line x1="0" y1="7" x2="15" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
+                </svg>
+            </a>
+            <a class="next" onclick="plusSlide()">
+                <svg width="92" height="14">
+                    <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
+                    <line x1="92" y1="7" x2="77" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
+                    <line x1="92" y1="7" x2="77" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
+                </svg>
+            </a>
         </div>
-        <div class="slider-controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
+        <article class="about">
+            <div class="about__presentation">
+                <h2 class="about__title">О нас</h2>
+                <p class="about__text">Компания Аркас-М специализируется на прямых поставках мебели из Европы. Более 20 лет работы в этой сфере позволяет безошибочно отбирать и предлагать Вам только лучшее. Мы работаем без посредников с более 1000 европейских мебельных фабрик. При выборе производителя мы проводим тщательный анализ будущего партнера, посещаем фабрики-производители с целью ознакомления с производственным процессом.</p>
+            </div>
+            <section class="socia social_about">
+                <ul class="list list__about">
+                    <li class="list__item">
+                        <a class="list__link list__link_youtube" href="https://www.youtube.com/?gl=RU&tab=r1">Youtube</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_insta" href="https://www.instagram.com/?hl=ru">Instagram</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_face" href="https://ru-ru.facebook.com/">Facebook</a>
+                    </li>
+                </ul>
+                <p class="about__text">Будь в курсе последних трендов и веяний в мире дизайна интерьеров. Всегда первым узнавай о наших скидках и акциях.</p>
+            </section>
+        </article>
+        <section class="features">
+            <div class="features__item">
+                <img src="../img/features1.png" alt="">
+                <span>Бесплатная доставка по городу</span>
+            </div>
+            <div class="features__item">
+                <img src="../img/features2.png" alt="">
+                <span>Разработка дизайн проектов</span>
+            </div>
+            <div class="features__item">
+                <img src="../img/features3.png" alt="">
+                <span>25 лет на рынке</span>
+            </div>
+            <div class="features__item">
+                <img src="../img/features4.png" alt="">
+                <span>Комплексные интерьерные решения</span>
+            </div>
+            <div class="features__item">
+                <img src="../img/features5.png" alt="">
+                <span>Лучшая дизайнерская мебель Италии, Европы, России</span>
+            </div>
+        </section>
+        <section class="trands">
+            <h2 class="trands__title">В тренде</h2>
+            <div class="trands__cards">
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Elam сейчас в тренде из-за геоиетрического рисунка на фасаде</p>
+                    </a>
+                </div>
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands1.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Dama</p>
+                    </a>
+                </div>
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands2.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Gran Duca 03</p>
+                    </a>
+                </div>
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands3.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Regina</p>
+                    </a>
+                </div>
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands4.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Regina 2</p>
+                    </a>
+                </div>
+                <div class="trands__card">
+                    <a href="" class="trands__link">
+                        <img src="../img/trands5.png" alt="" class="trands__img">
+                        <p class="trands__text">Кухня Gran Duca di Toscana</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <h2 class="news__title">Подпишитесь на новости</h2>
+            <form action="" class="form">
+                <fieldset class="news__fieldset">
+                    <legend class="news__legend">Всегда быть в курсе последних поступлений и акций</legend>
+                    <label>
+                        <input class="news__input" type="email" placeholder="Введите ваш e-mail">
+                        <button class="button button_news" type="submit">OK</button>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <section class="catalog">
+            <h2 class="catalog__title">Каталог</h2>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Кухни</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Кухня</a>
+                    <a href="" class="catalog__link">Столы обеденные</a>
+                    <a href="" class="catalog__link">Стулья</a>
+                    <a href="" class="catalog__link">Техника</a>
+                </div>
+                <span class="catalog__text">Идеальное сочетание качества и стиля</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Спальни</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Банкетки, пуфы</a>
+                    <a href="" class="catalog__link">Комоды</a>
+                    <a href="" class="catalog__link">Консоли</a>
+                    <a href="" class="catalog__link">Кровати</a>
+                    <a href="" class="catalog__link">Прикроватные тумбы</a>
+                    <a href="" class="catalog__link">Стулья</a>
+                    <a href="" class="catalog__link">Туалетный стол</a>
+                    <a href="" class="catalog__link">Шкафы</a>
+                </div>
+                <span class="catalog__text">Удовольствие, красота и комфорт</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Аксессуары</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Аксессуары для прихожей</a>
+                    <a href="" class="catalog__link">Вазы, кашпо</a>
+                    <a href="" class="catalog__link">Зеркала</a>
+                    <a href="" class="catalog__link">Картины</a>
+                    <a href="" class="catalog__link">Подсвечники, свечи</a>
+                    <a href="" class="catalog__link">Подставки под цветы</a>
+                    <a href="" class="catalog__link">Предметы сервировки</a>
+                    <a href="" class="catalog__link">Статуэтки, декоративные предметы</a>
+                    <a href="" class="catalog__link">Текстиль, ковры</a>
+                    <a href="" class="catalog__link">Цветы</a>
+                </div>
+                <span class="catalog__text">Изысканное дополнение интерьера</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Детские</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Готовые решения</a>
+                    <a href="" class="catalog__link">Кровати</a>
+                    <a href="" class="catalog__link">Кровати для новорожденных</a>
+                    <a href="" class="catalog__link">Модульная система</a>
+                    <a href="" class="catalog__link">Пеленальные столы</a>
+                    <a href="" class="catalog__link">Посьменные столы</a>
+                    <a href="" class="catalog__link">Стулья</a>
+                </div>
+                <span class="catalog__text">Удобство в сочетании с качеством</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Гардеробные</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Гардеробные</a>
+                </div>
+                <span class="catalog__text">Огромный выбор модульных систем</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Ванные</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Комплектующие</a>
+                    <a href="" class="catalog__link">Мебель для ванной</a>
+                </div>
+                <span class="catalog__text">Создайте уют и тепло во всем доме</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Гостинные</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Бары, стулья</a>
+                    <a href="" class="catalog__link">Витрины</a>
+                    <a href="" class="catalog__link">Диваны</a>
+                    <a href="" class="catalog__link">Журнальные столики</a>
+                    <a href="" class="catalog__link">Комоды</a>
+                    <a href="" class="catalog__link">Консоли</a>
+                    <a href="" class="catalog__link">Кресла</a>
+                    <a href="" class="catalog__link">Модульные системы</a>
+                    <a href="" class="catalog__link">Пуфы</a>
+                    <a href="" class="catalog__link">Столики для сервировки</a>
+                </div>
+                <span class="catalog__text">Удобство в сочетании с качеством</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Свет</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Бра</a>
+                    <a href="" class="catalog__link">Встроенные светильники</a>
+                    <a href="" class="catalog__link">Люстры</a>
+                    <a href="" class="catalog__link">Настольные лампы</a>
+                    <a href="" class="catalog__link">Подвесы</a>
+                    <a href="" class="catalog__link">Потолочные светильники</a>
+                    <a href="" class="catalog__link">Торшеры</a>
+                </div>
+                <span class="catalog__text">Подберите правильное освещение</span>
+            </div>
+            <div class="catalog__unit">
+                <h3 class="catalog-unit__title">Кабинеты</h3>
+                <div class="catalog__block">
+                    <a href="" class="catalog__link">Библиотеки</a>
+                    <a href="" class="catalog__link">Мягкая мебель</a>
+                    <a href="" class="catalog__link">Сейфы</a>
+                    <a href="" class="catalog__link">Столы</a>
+                    <a href="" class="catalog__link">Стулья</a>
+                </div>
+                <span class="catalog__text">Создайте свое пространство</span>
+            </div>
+            <button class="button" type="button">Увидеть больше</button>
+        </section>
+        <section class="answer">
+            <h2 class="answer__title">Интерьерные решения</h2>
+            <div class="slider answer-slider">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                <input type="radio" name="point" id="slide4">
+                <div class="slider-items">
+                    <div class="slider-item slider-1">
+                        <div class="answer-slider__container">
+                            <h3 class="answer-slider__title">Апартаменты в гостинице "Интурист"</h3>
+                            <div class="answer-slider__from">
+                                <h3 class="answer-slider__from-title">Мебель и свет, Италия:</h3>
+                                <p class="answer-slider__from-text">Мебель от: Selva, Jumbo Collections,
+                                    Angelo Cappellini, Grande Arredo, Gervasoni и Bamax</p>
+                                <p class="answer-slider__from-text">Свет от: Ciulli, Archeo Venice Design, Laudarte, Axo Light</p>
+                                <button class="button" type="button">Увидеть больше</button>
+                            </div>
+                            <span class="answer-slider__promo">Элегантная обстановка</span>
+                            <p class="answer-slider__text">Силами сотрудников Аркос-М было реализовано наполнение 5 тематических номеров: Презедентский номер, Японский номер, Восточный номер, Конструктивный номер, Английский номер. Каждый номер несёт в себе стилизованный дизайн и продуман до мелочей. Мебель, элементы декора, подсветка… Простота японского интерьера, соседствующая с современным комфортом, роскошь и респектабельность классического номера,сочетание современных и смелых дизайнерских решений конструктивного номера, Арабские арки, расписная мебель, изысканная фурнитура восточного номера не оставит равнодошным никого. </p>
+                            <section class="social">
+                                <span class="social__text">Поделиться</span>
+                                <ul class="list">
+                                    <li class="list__item">Youtube</li>
+                                    <li class="list__item">Instagram</li>
+                                    <li class="list__item">Facebook</li>
+                                </ul>
+                            </section>
+                            <span class="answer-slider__h4">В дизайне использованы</span>
+                            <ul class="answer-slider__list">
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Точечный светильник Laudeate</h4>
+                                </li>
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Стол Selva</h4>
+                                </li>
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Шкаф под минибар Selva</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider-item slider-2">
+                        <div class="answer-slider__container">
+                            <h3 class="answer-slider__title">Апартаменты в гостинице "Интурист"</h3>
+                            <div class="answer-slider__from">
+                                <h3 class="answer-slider__from-title">Мебель и свет, Италия:</h3>
+                                <p class="answer-slider__from-text">Мебель от: Selva, Jumbo Collections,
+                                    Angelo Cappellini, Grande Arredo, Gervasoni и Bamax</p>
+                                <p class="answer-slider__from-text">Свет от: Ciulli, Archeo Venice Design, Laudarte, Axo Light</p>
+                                <button class="button" type="button">Увидеть больше</button>
+                            </div>
+                            <span class="answer-slider__promo">Элегантная обстановка</span>
+                            <p class="answer-slider__text">Силами сотрудников Аркос-М было реализовано наполнение 5 тематических номеров: Презедентский номер, Японский номер, Восточный номер, Конструктивный номер, Английский номер. Каждый номер несёт в себе стилизованный дизайн и продуман до мелочей. Мебель, элементы декора, подсветка… Простота японского интерьера, соседствующая с современным комфортом, роскошь и респектабельность классического номера,сочетание современных и смелых дизайнерских решений конструктивного номера, Арабские арки, расписная мебель, изысканная фурнитура восточного номера не оставит равнодошным никого. </p>
+                            <section class="social">
+                                <span class="social__text">Поделиться</span>
+                                <ul class="list">
+                                    <li class="list__item">Youtube</li>
+                                    <li class="list__item">Instagram</li>
+                                    <li class="list__item">Facebook</li>
+                                </ul>
+                            </section>
+                            <span class="answer-slider__h4">В дизайне использованы</span>
+                            <ul class="answer-slider__list">
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Точечный светильник Laudeate</h4>
+                                </li>
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Стол Selva</h4>
+                                </li>
+                                <li class="answer-slider__item">
+                                    <img src="" alt="" class="answer-slider__img">
+                                    <h4 class="answer-slider__h4">Шкаф под минибар Selva</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="map"></div>
+            <article class="contacts__info">
+                <span class="contacts__adress">Адрес</span>
+                <div>350000 г. Краснодар</div>
+                <div>ул. Суворова 117</div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <a href="#" class="footer__dealers">Дилерам</a>
+            <h2 class="footer__title">Аркас-М</h2>
+            <span class="footer__about">Салон интерьера. Мебель. Свет. Декор. "Кухни в интерьере"</span>
+            <div class="footer__telefons">
+                <a href="#" class="footer__tel">+788612625777</a>
+                <a href="#" class="footer__whatsapp">+79181737785</a>
+            </div>
+            <a href="#" class="footer__dealers">Дизайнерам</a>
+            <div class="footer__cards">
+                <a href="" class="footer__card">Maestro</a>
+                <a href="" class="footer__card">PayPal</a>
+                <a href="" class="footer__card">Visa</a>
+                <a href="" class="footer__card">MasterCard</a>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="map"></div>
-      <article class="contacts__info">
-        <span class="contacts__adress">Адрес</span>
-        <div>350000 г. Краснодар</div>
-        <div>ул. Суворова 117</div>
-      </article>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__content">
-      <a href="#" class="footer__dealers">Дилерам</a>
-      <h2 class="footer__title">Аркас-М</h2>
-      <span class="footer__about">Салон интерьера. Мебель. Свет. Декор. "Кухни в интерьере"</span>
-      <div class="footer__telefons">
-        <a href="#" class="footer__tel">+788612625777</a>
-        <a href="#" class="footer__whatsapp">+79181737785</a>
-      </div>
-      <a href="#" class="footer__dealers">Дизайнерам</a>
-      <div class="footer__cards">
-        <a href="" class="footer__card">Maestro</a>
-        <a href="" class="footer__card">PayPal</a>
-        <a href="" class="footer__card">Visa</a>
-        <a href="" class="footer__card">MasterCard</a>
-      </div>
-    </div>
-    <p class="footer__copyright"> &#169; 2016 Все права защищены</p>
-  </footer>
+        <p class="footer__copyright"> &#169; 2016 Все права защищены</p>
+    </footer>
+    <script src="../js/slider.js"></script>
 </body>
 
 </html>

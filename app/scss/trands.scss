@@ -1,0 +1,33 @@
+.trands {
+    &__cards {
+        padding-top: 3vh;
+    }
+
+    &__card {
+        padding-bottom: 30px;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: calc((20 / 16) * 100%);
+        text-align: center;
+        padding-top: 13vh;
+    }
+
+    &__img {
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: calc((15 / 16) * 100%);
+        color: rgba(66, 66, 66, 0.64);
+        text-align: center;
+    }
+}

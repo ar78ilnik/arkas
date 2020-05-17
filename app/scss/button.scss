@@ -1,10 +1,21 @@
 .button {
-  &__nav {
-    font-size: 0;
-    line-height: 0;
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-  }
+    &__nav {
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        width: 80px;
+        height: 40px;
+        background-color: transparent;
+    }
+
+    &_news {
+        background-color: #ff5252;
+        border: none;
+        font-size: inherit;
+        position: absolute;
+        color: #fff;
+        padding: 6px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }

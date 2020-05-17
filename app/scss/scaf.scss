@@ -1,8 +1,14 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+}
+
+section,
+article {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
