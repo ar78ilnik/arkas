@@ -1,5 +1,6 @@
 .list {
   display: block;
+  padding-left: 20px;
 
   &__item {
     width: 65px;
@@ -8,9 +9,10 @@
   &__link {
     display: block;
     text-decoration: none;
-    font-size: calc((20 / 16) * 100%);
+    font-size: calc((16 / 16) * 100%);
     line-height: calc((20 / 16) * 100%);
     width: 65px;
+    padding-bottom: 1vh;
 
     &_youtube {
       background-image: url(../img/youtube-big.png);
@@ -68,11 +70,16 @@
   &__title {
     font-size: 20px;
     color: white;
+    margin-bottom: 1vh;
   }
 
   &_menu-catalog {
-    padding-top: 1vh;
+    padding-top: 4vh;
     background-color: #493b38;
+
+    &-closed {
+      display: none;
+    }
   }
 
 }
