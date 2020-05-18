@@ -5,4 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &_opened {
+    display: block;
+    height: 170px;
+  }
 }
