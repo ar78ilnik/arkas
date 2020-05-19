@@ -39,7 +39,9 @@ function style() {
     .pipe(debug({
       title: 'src'
     }))
-    .pipe(scss())
+    .pipe(scss({
+      includePaths: ['node_modules']
+    }))
     .pipe(debug({
       title: 'scss'
     }))
