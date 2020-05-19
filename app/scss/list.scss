@@ -54,6 +54,7 @@
     position: absolute;
     top: 40px;
     left: 0;
+    padding-top: 2vh;
   }
 
   &-nav__item {
@@ -68,9 +69,7 @@
 
   /* Верхнее меню каталог*/
   &__title {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 1vh;
+    display: none;
   }
 
   &_menu-catalog {

@@ -3,15 +3,12 @@
 /* подключаем плагины */
 const gulp = require('gulp');
 const scss = require('gulp-sass');
-const pug = require('gulp-pug');
-const htmlbeautify = require('gulp-html-beautify');
 const debug = require('gulp-debug');
 const bs = require('browser-sync').create();
 const plumber = require('gulp-plumber');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('autoprefixer');
 const del = require('del');
@@ -39,9 +36,7 @@ function style() {
     .pipe(debug({
       title: 'src'
     }))
-    .pipe(scss({
-      includePaths: ['node_modules']
-    }))
+    .pipe(scss())
     .pipe(debug({
       title: 'scss'
     }))
