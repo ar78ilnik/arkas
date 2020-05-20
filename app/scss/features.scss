@@ -1,10 +1,17 @@
 .features {
-  &__title {
-    display: none;
-  }
 
   &__items {
     display: flex;
     flex-direction: column;
+    width: 80%;
+  }
+
+  &__card-title {
+    font-size: calc((16/16)*100%);
+    font-weight: 200;
+  }
+
+  &__text {
+    font-size: calc((14/16)*100%);
   }
 }

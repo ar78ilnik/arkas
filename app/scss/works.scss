@@ -1,0 +1,55 @@
+.works {
+  margin-bottom: 4vh;
+
+  &__item {
+    margin-bottom: 3vh;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__about {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: calc((16/16)*100%);
+  }
+
+  &__more-info {
+    font-size: calc((10/16)*100%);
+    padding-left: 2em;
+  }
+
+  &__see-more {
+    width: 3em;
+    color: #dd7281;
+    font-size: calc((10/16)*100%);
+    line-height: 1.5em;
+    padding-left: 5em;
+    position: relative;
+  }
+
+  &__see-more:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2px;
+    left: 19px;
+    border-radius: 50%;
+    border: 1px solid #dd7281;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none' stroke='none'>
+<polyline points='10,10 15,15 10,20'></polyline> </svg>") no-repeat;
+
+    }
+  }

@@ -1,10 +1,4 @@
 .sale {
-  &__title {
-    font-size: calc((20/16)*100%);
-    text-align: center;
-    padding-top: 3vh;
-    margin-bottom: 5vh;
-  }
 
   &__items {
     display: flex;
