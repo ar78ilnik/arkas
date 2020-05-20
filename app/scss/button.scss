@@ -1,21 +1,43 @@
 .button {
-    &__nav {
-        font-size: 0;
-        line-height: 0;
-        border: none;
-        width: 80px;
-        height: 40px;
-        background-color: transparent;
-    }
+  &__nav {
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+  }
 
-    &_news {
-        background-color: #ff5252;
-        border: none;
-        font-size: inherit;
-        position: absolute;
-        color: #fff;
-        padding: 6px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
+  &_news {
+    background-color: #ff5252;
+    border: none;
+    font-size: inherit;
+    position: absolute;
+    color: #fff;
+    padding: 6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__sale {
+    display: block;
+    background-color: #fff;
+    border: 2px solid #729d88;
+    border-radius: 20px;
+    color: #729d88;
+    font-size: calc((16/16)*100%);
+    font-weight: 600;
+    padding: .5em 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__sale:hover {
+    cursor: pointer;
+  }
+
+  &__sale:active {
+    background-color: #729d88;
+    color: #fff;
+  }
 }

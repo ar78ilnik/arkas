@@ -1,0 +1,19 @@
+.categories {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2vh;
+  }
+
+  &__item {
+    width: 40%;
+    margin-bottom: 2vh;
+    border: 1px solid #dedede;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}

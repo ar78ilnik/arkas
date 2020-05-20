@@ -1,0 +1,60 @@
+.sale {
+  &__title {
+    font-size: calc((20/16)*100%);
+    text-align: center;
+    padding-top: 3vh;
+    margin-bottom: 5vh;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    width: 80%;
+    height: auto;
+    border: 1px solid #a1887f;
+    margin-bottom: 3vh;
+  }
+
+  &__text,
+  &__prices,
+  button__sale {
+    margin-left: 1em;
+  }
+
+  &__text span {
+    display: block;
+  }
+
+  &__category {
+    font-size: calc((14/16)*100%);
+  }
+
+  &__name {
+    font-size: calc((18/16)*100%);
+  }
+
+  &__price-meter {
+    font-size: calc((8/16)*100%);
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+
+  &__price-before {
+    text-decoration: line-through;
+    font-size: calc((10/16)*100%);
+    padding-right: 40px;
+  }
+}
