@@ -1,5 +1,9 @@
 .works {
   margin-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   &__item {
     margin-bottom: 3vh;
@@ -48,8 +52,5 @@
     left: 19px;
     border-radius: 50%;
     border: 1px solid #dd7281;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='none' stroke='none'>
-<polyline points='10,10 15,15 10,20'></polyline> </svg>") no-repeat;
-
-    }
   }
+}
