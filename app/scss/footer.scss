@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background-color: #424242;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: #c56b22;
+  }
+
+  &__tel {
+    text-decoration: none;
+    color: #fff;
+    font-size: calc((13/16)*100%);
+  }
+
+  &__whatsapp {
+    text-decoration: none;
+    color: #fff;
+    font-size: calc((13/16)*100%);
+  }
+
+  &__copyright {
+    color: #fff;
+    text-align: center;
+  }
+}

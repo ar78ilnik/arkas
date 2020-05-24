@@ -4,6 +4,14 @@
     display: flex;
     flex-direction: column;
     width: 80%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
   }
 
   &__card-title {
@@ -11,7 +19,8 @@
     font-weight: 200;
   }
 
-  &__text {
-    font-size: calc((14/16)*100%);
+  &__paragraph {
+    font-size: calc((16/16)*100%);
+    padding-left: 1em;
   }
 }

@@ -48,4 +48,13 @@
     padding: .5em 1em;
     border-radius: .5em;
   }
+
+  &__cards {
+    border: 2px solid #ff5252;
+    border-radius: 20px;
+    padding: .2em .7em;
+    margin-right: auto;
+    line-height: 25px;
+    background-color: #fff;
+  }
 }

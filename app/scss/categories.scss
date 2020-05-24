@@ -1,16 +1,22 @@
 .categories {
+
   &__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2vh;
+    width: 100px;
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    border: 1px solid grey;
   }
 
   &__item {
-    width: 40%;
+    width: 100px;
+    height: 100px;
     margin-bottom: 2vh;
     border: 1px solid #dedede;
+    transform: rotate(90deg);
+    transform-origin: right top;
   }
 
   &__text {

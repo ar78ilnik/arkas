@@ -1,0 +1,10 @@
+.contacts {
+  margin-bottom: 10px;
+  font-size: calc((14/16)*100%);
+
+  &__info {
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+  }
+}

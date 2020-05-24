@@ -2,6 +2,13 @@
   display: block;
   padding-left: 20px;
 
+  &_footer {
+    padding: 0;
+    width: 100%;
+    background-color: #424242;
+    margin-bottom: 20px;
+  }
+
   &__item {
     width: 65px;
   }
@@ -13,6 +20,13 @@
     line-height: calc((20 / 16) * 100%);
     width: 65px;
     padding-bottom: 1vh;
+
+    &_footer {
+      width: 100%;
+      color: white;
+      padding: .7em;
+      border-bottom: 1px solid #c56b22;
+    }
 
     &_youtube {
       background-image: url(../img/youtube-big.png);
@@ -42,6 +56,10 @@
   }
 
   /* Навигационное меню*/
+  &-nav_sub {
+    position: absolute;
+    min-width: 150px;
+  }
 
   &-nav_closed {
     display: none;

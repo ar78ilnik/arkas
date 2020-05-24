@@ -12,23 +12,31 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin-bottom: 3vh;
-    border: 1px solid #a1887f;
+    border: 1px solid #d8d8d8;
   }
 
   &__link {
-    height: 200px;
+    height: 170px;
     width: 100%;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 
   &__img {
-    width: 130px;
+    background-color: grey;
+  }
+
+  &__price {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: .6em;
   }
 
   &__text {
