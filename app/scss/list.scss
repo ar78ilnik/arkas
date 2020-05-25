@@ -15,6 +15,7 @@
 
   &__link {
     display: block;
+    width: 100%;
     text-decoration: none;
     font-size: calc((16 / 16) * 100%);
     line-height: calc((20 / 16) * 100%);
@@ -22,9 +23,10 @@
     padding-bottom: 1vh;
 
     &_footer {
-      width: 100%;
+      width: 98%;
       color: white;
       padding: .7em;
+      padding-right: 0;
       border-bottom: 1px solid #c56b22;
     }
 

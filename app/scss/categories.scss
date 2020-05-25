@@ -1,25 +1,40 @@
-.categories {
+/*.categories {
+  height: 100px;
 
   &__items {
     width: 100px;
     height: 200px;
-    overflow-y: auto;
-    overflow-x: hidden;
     transform: rotate(-90deg);
     transform-origin: right top;
-    border: 1px solid grey;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   &__item {
     width: 100px;
     height: 100px;
-    margin-bottom: 2vh;
-    border: 1px solid #dedede;
     transform: rotate(90deg);
-    transform-origin: right top;
+    transform-origin: center;
   }
 
   &__text {
     text-align: center;
+  }
+}
+*/
+
+.categories {
+  width: 100%;
+  margin: 0 auto;
+
+  &__items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &__item {
+    flex: 0 0 100px;
   }
 }
