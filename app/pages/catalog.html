@@ -128,8 +128,15 @@
         <a class="list__link list-nav__link" href="#">Распродажи</a>
       </li>
     </ul>
-    <section class="catalog-unit catalog-unit_container">
-      <img class="catalog-unit__img" src="img/catalog-unit1-mobile.jpg" alt="" width="320" height="150">
+    <section class="catalog-unit">
+      <div class="catalog-unit__images">
+        <img class="catalog-unit__img" src="img/catalog-unit1-mobile.jpg" alt="" width="768" height="auto">
+        <div class="catalog-unit__mini">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit1-mobile.jpg" alt="" width="70" height="50">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit2-mobile.jpg" alt="" width="70" height="50">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit3-mobile.jpg" alt="" width="70" height="auto">
+        </div>
+      </div>
       <div class="catalog-unit__info">
         <h4 class="catalog-unit__title">Стол Elika</h4>
         <span class="catalog-unit__style">Стиль: Модерн</span>
@@ -172,8 +179,42 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <ul class="list list_footer">
+      <li class="list__item list-nav__item">
+        <a class="list__link list__link_footer" href="#">О компании</a>
+      </li>
+      <li class="list__item list-nav__item">
+        <a class="list__link list__link_footer" href="#">Доставка и оплата</a>
+      </li>
+      <li class="list__item list-nav__item">
+        <a class="list__link list__link_footer" href="#">Наши работы</a>
+      </li>
+      <li class="list__item list-nav__item">
+        <a class="list__link list__link_footer" href="#">Дизайнерам</a>
+      </li>
+      <li class="list__item list-nav__item">
+        <a class="list__link list__link_footer" href="#">Дилерам</a>
+      </li>
+    </ul>
+    <div class="footer__content">
+      <h2 class="footer__title">Аркас-М</h2>
+      <section class="contacts">
+        <article class="contacts__info">
+          <div>Адрес: 350000 г. Краснодар</div>
+          <div>ул. Суворова 117</div>
+        </article>
+      </section>
+      <div class="footer__telefons">
+        <a href="#" class="footer__tel">+788612625777</a>
+        <a href="#" class="footer__whatsapp">+79181737785</a>
+      </div>
+    </div>
+    <p class="footer__copyright"> &#169; 2016 Все права защищены</p>
+  </footer>
   <script src="../js/slider.js"></script>
   <script src="../js/toogle.js"></script>
+  <script src="../js/preview.js"></script>
 </body>
 
 </html>
