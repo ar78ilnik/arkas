@@ -4,6 +4,15 @@
   font-size: calc((15/16)*100%);
   line-height: calc((30/16)*100%);
 
+  &_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__info {
+    margin-bottom: 30px;
+  }
+
   &__title {
     font-family: Georgia;
     font-size: calc((18/16)*100%);
@@ -48,5 +57,38 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__about {
+    font-size: calc((15/16)*100%);
+    font-weight: 300;
+    line-height: calc((30/16)*100%);
+  }
+
+  &__guaranty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__krasnodar {
+    font-size: calc((11/16)*100%);
+    font-weight: 300;
+    line-height: calc((20/16)*100%);
   }
 }

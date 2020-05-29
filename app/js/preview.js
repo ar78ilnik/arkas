@@ -1,8 +1,10 @@
 "use strict";
-var imgItem = document.querySelectorAll(".catalog-unit__mini-item");
+var imgMini = document.querySelectorAll(".catalog-unit__mini-item");
+var imgBig = document.querySelector(".catalog-unit__img");
 
-imgItem.forEach(function (item) {
+imgMini.forEach(function (item) {
   item.addEventListener("click", function () {
-    alert("hola");
+    var imgBigSrc = imgBig.getAttribute("src");
+    var imgMiniSrc = item.getAttribute("src");
   })
 });

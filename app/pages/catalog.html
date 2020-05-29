@@ -137,44 +137,64 @@
           <img class="catalog-unit__mini-item" src="img/catalog-unit3-mobile.jpg" alt="" width="70" height="auto">
         </div>
       </div>
-      <div class="catalog-unit__info">
-        <h4 class="catalog-unit__title">Стол Elika</h4>
-        <span class="catalog-unit__style">Стиль: Модерн</span>
-        <span class="catalog-unit__brand">Бренд: Porada</span>
-        <span class="catalog-unit__from">Страна производитель: Италия</span>
-      </div>
-      <form class="form form-price">
-        <span class="form-price__cuantity">Количество</span>
-        <input class="form-price__input" id="pieces" type="text" value="1">
-        <span class="form-price__pieces">шт</span>
-        <label for="pieces" class="form-price__label">100 000 р.</label>
-        <button class="button button__cards" type="button">Заказать</button>
-      </form>
-      <div class="catalog-unit__features">
-        <div class="catalog-unit__column">
-          <span class="catalog-unit__about">Доставка</span>
-          <p class="catalog-unit__guaranty">
-            <span class="catalog-unit__krasnodar">По Краснодару: Бесплатно</span>
-            <span class="catalog-unit__krasnodar">По России: от 3 дней</span>
-          </p>
+      <div class="catalog-unit_container">
+        <div class="catalog-unit__info">
+          <h4 class="catalog-unit__title">Стол Elika</h4>
+          <span class="catalog-unit__style">Стиль: Модерн</span>
+          <span class="catalog-unit__brand">Бренд: Porada</span>
+          <span class="catalog-unit__from">Страна производитель: Италия</span>
         </div>
-      </div>
-      <div class="tabs">
-        <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-        <label class="tabs__label" for="tab-btn-1">Описание</label>
-        <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-2" value="">
-        <label class="tabs__label" for="tab-btn-2">Отзывы</label>
-        <div class="tabs__content" id="content-1">
-          <p class="tabs__paragraph">Обеденный стол, основание шпон ореха установленном на металлической пластине, столешница закаленное стекло (толщиной 12 мм)
-          </p>
-          <div class="tabs__fotos">
-            <img src="img/catalog-unit1-mobile.jpg" alt="" width="320" height="auto">
-            <img src="img/catalog-unit2-mobile.jpg" alt="" width="320" height="auto">
-            <img src="img/catalog-unit3-mobile.jpg" alt="" width="320" height="auto">
+        <!--
+        <form class="form form-price">
+          <span class="form-price__cuantity">Количество</span>
+          <input class="form-price__input" id="pieces" type="text" value="1">
+          <label for="pieces" class="form-price__label">100 000 р.</label>
+          <button class="button button__cards" type="button">Заказать</button>
+        </form>
+        -->
+        <div class="catalog-unit__features">
+          <div class="catalog-unit__column">
+            <div class="catalog-unit__row">
+              <svg class="icon icon_features">
+                <use xlink:href="#cat1"></use>
+              </svg>
+              <span class="catalog-unit__about">Доставка</span>
+            </div>
+            <p class="catalog-unit__guaranty">
+              <span class="catalog-unit__krasnodar">По Краснодару: Бесплатно</span>
+              <span class="catalog-unit__krasnodar">По России: от 3 дней</span>
+            </p>
+          </div>
+          <div class="catalog-unit__column">
+            <div class="catalog-unit__row">
+              <svg class="icon icon_features">
+                <use xlink:href="#cat1"></use>
+              </svg>
+              <span class="catalog-unit__about">Гарантия</span>
+            </div>
+            <p class="catalog-unit__guaranty">
+              <span class="catalog-unit__krasnodar">Гарантия: 2 года</span>
+              <span class="catalog-unit__krasnodar">Возврат: в течение 14 дней</span>
+            </p>
           </div>
         </div>
-        <div class="tabs__content" id="content-2">
-          Содержимое 2...
+        <div class="tabs">
+          <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+          <label class="tabs__label" for="tab-btn-1">Описание</label>
+          <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-2" value="">
+          <label class="tabs__label" for="tab-btn-2">Отзывы</label>
+          <div class="tabs__content" id="content-1">
+            <p class="tabs__paragraph">Обеденный стол, основание шпон ореха установленном на металлической пластине, столешница закаленное стекло (толщиной 12 мм)
+            </p>
+            <div class="tabs__fotos">
+              <img src="img/catalog-unit1-mobile.jpg" alt="" width="320" height="auto">
+              <img src="img/catalog-unit2-mobile.jpg" alt="" width="320" height="auto">
+              <img src="img/catalog-unit3-mobile.jpg" alt="" width="320" height="auto">
+            </div>
+          </div>
+          <div class="tabs__content" id="content-2">
+            Содержимое 2...
+          </div>
         </div>
       </div>
     </section>
