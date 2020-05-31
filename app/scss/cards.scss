@@ -63,6 +63,11 @@
 
 @media screen and (min-width: 768px) {
   .cards {
+    &__link {
+      height: 248px;
+      margin-bottom: 2em;
+    }
+
     &__items {
       flex-direction: row;
       flex-wrap: wrap;
@@ -103,6 +108,7 @@
     }
 
     &__link {
+      display: block;
       height: 270px;
     }
 
