@@ -45,3 +45,29 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .works {
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    &__items {
+      width: 80%;
+    }
+
+    &__item {
+      flex-basis: 30%;
+    }
+  }
+}

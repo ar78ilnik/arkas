@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Аркас Каталог</title>
+  <meta charset="UTF-8">
+  <title>Карточка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
   <svg style="display: none">
     <symbol id="burger">
       <svg width="80" height="40" viewBox="0 -6 60 30">
@@ -67,6 +67,10 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" xmlns:v="https://vecta.io/nano">
         <path d="M2 7h20v3h-2l1 9h-2.5l-.56-5H6.06l-.56 5H3l1-9H2V7m15.5 3h-11l-.2 2H17.7l-.2-2z" /></svg>
     </symbol>
+    <symbol id="dostavka" viewBox="0 0 30 30">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" xmlns:v="https://vecta.io/nano">
+        <image xlink:href="data:image/png;base64,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" x="-100" y="-100" transform="translate(200 200)" /></svg>
+    </symbol>
 
   </svg>
   <header class="header">
@@ -110,35 +114,61 @@
     </div>
   </header>
   <main class="main">
-    <ul class="list list_menu-catalog list list_menu-catalog-closed">
-      <h2 class="title__h2 title__h2_hiden">Каталог</h2>
-      <li class="list__item">
-        <a class="list__link list-nav__link" href="catalog.html">Кухни</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list-nav__link" href="cartochka.html">Столы и стулья</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list-nav__link" href="#">Акции</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list-nav__link" href="#">Распродажи</a>
-      </li>
-    </ul>
-    <section class="catalog">
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Кухни</h3>
-        <div class="catalog__block">
+    <section class="catalog-unit">
+      <div class="catalog-unit__images">
+        <img class="catalog-unit__img" src="img/catalog-unit1-mobile.jpg" alt="" width="768" height="auto">
+        <div class="catalog-unit__mini">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit1-mobile.jpg" alt="" width="70" height="50">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit2-mobile.jpg" alt="" width="70" height="50">
+          <img class="catalog-unit__mini-item" src="img/catalog-unit3-mobile.jpg" alt="" width="70" height="auto">
         </div>
       </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Спальни</h3>
-        <div class="catalog__block">
+      <div class="catalog-unit_container">
+        <div class="catalog-unit__info">
+          <h4 class="catalog-unit__title">Стол Elika</h4>
+          <span class="catalog-unit__brand">Бренд: Porada</span>
+          <span class="catalog-unit__from">Страна производитель: Италия</span>
         </div>
-      </div>
-      <div class="catalog__unit">
-        <h3 class="catalog__title">Аксессуары</h3>
-        <div class="catalog__block">
+        <span class="catalog-unit__price">от 100 000 руб.</span>
+        <button class="button button__cards" type="button">Заказать</button>
+        <div class="catalog-unit__features">
+          <div class="catalog-unit__column">
+            <div class="catalog-unit__row">
+              <svg class="icon icon_features">
+                <use xlink:href="#dostavka"></use>
+              </svg>
+              <span class="catalog-unit__about">Доставка</span>
+            </div>
+            <p class="catalog-unit__guaranty">
+              <span class="catalog-unit__krasnodar">По Краснодару: Бесплатно</span>
+              <span class="catalog-unit__krasnodar">По России: от 3 дней</span>
+            </p>
+          </div>
+          <div class="catalog-unit__column">
+            <div class="catalog-unit__row">
+              <svg class="icon icon_features">
+                <use xlink:href="#cat1"></use>
+              </svg>
+              <span class="catalog-unit__about">Гарантия</span>
+            </div>
+            <p class="catalog-unit__guaranty">
+              <span class="catalog-unit__krasnodar">Гарантия: 2 года</span>
+              <span class="catalog-unit__krasnodar">Возврат: в течение 14 дней</span>
+            </p>
+          </div>
+        </div>
+        <div class="tabs">
+          <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+          <label class="tabs__label" for="tab-btn-1">Описание</label>
+          <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-2" value="">
+          <label class="tabs__label" for="tab-btn-2">Характеристики</label>
+          <div class="tabs__content" id="content-1">
+            <p class="tabs__paragraph">Обеденный стол, основание шпон ореха установленном на металлической пластине, столешница закаленное стекло (толщиной 12 мм)
+            </p>
+          </div>
+          <div class="tabs__content" id="content-2">
+            Содержимое 2...
+          </div>
         </div>
       </div>
     </section>

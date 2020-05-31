@@ -11,6 +11,10 @@
 
   &__info {
     margin-bottom: 30px;
+    font-size: calc((14/16)*100%);
+    line-height: calc((28/16)*100%);
+    color: #424242;
+    margin-bottom: 15px;
   }
 
   &__title {
@@ -27,6 +31,13 @@
 
   &__brand {
     display: block;
+  }
+
+  &__price {
+    display: block;
+    font-size: calc((24/16)*100%);
+    font-weight: 700;
+    margin-bottom: 24px;
   }
 
   &__from {
@@ -92,5 +103,15 @@
     font-size: calc((11/16)*100%);
     font-weight: 300;
     line-height: calc((20/16)*100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-unit {
+    margin-top: 3em;
+
+    &__img {
+      height: 400px;
+    }
   }
 }

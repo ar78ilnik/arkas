@@ -1,6 +1,7 @@
 .categories {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 3em;
 
   &__items {
     display: flex;
@@ -11,5 +12,16 @@
 
   &__item {
     flex: 0 0 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .categories {
+    width: 80%;
+
+    &__items {
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 }
