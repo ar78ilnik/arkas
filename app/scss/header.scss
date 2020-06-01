@@ -8,6 +8,12 @@
 
   &_opened {
     display: block;
-    height: 190px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 120px;
   }
 }

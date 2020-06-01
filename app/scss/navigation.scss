@@ -1,5 +1,5 @@
 .navigation {
-  display: block;
+  display: flex;
   height: 40px;
 
   &_opened {
@@ -7,8 +7,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .navigation {
-    height: 60px;
+    display: flex;
+    flex-direction: column;
   }
 }

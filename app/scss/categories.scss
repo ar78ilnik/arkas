@@ -20,7 +20,8 @@
     width: 80%;
 
     &__items {
-      width: 60%;
+      width: 100%;
+      justify-content: space-around;
       margin: 0 auto;
     }
   }

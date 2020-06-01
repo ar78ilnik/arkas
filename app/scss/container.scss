@@ -5,12 +5,20 @@
   &_index-header {
     height: 40px;
   }
+
+  &_menu {
+    padding-top: 1em;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     &_index-header {
-      height: 60px;
+      height: 120px;
+    }
+
+    &_menu {
+      padding: 0;
     }
   }
 }
