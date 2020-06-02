@@ -12,8 +12,8 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin-bottom: 3vh;
     border: 1px solid #d8d8d8;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__img {
@@ -37,8 +37,8 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: .6em;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -65,7 +65,6 @@
   .cards {
     &__link {
       height: 248px;
-      margin-bottom: 2em;
     }
 
     &__items {
@@ -109,7 +108,7 @@
 
     &__link {
       display: block;
-      height: 270px;
+      margin-bottom: 15px;
     }
 
     &__price {
