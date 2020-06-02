@@ -9,7 +9,7 @@
   }
 
   &__item {
-    width: 100%;
+    flex-basis: 100%;
     margin-bottom: 23px;
     background-color: #fff;
   }
@@ -36,7 +36,7 @@
   }
 
   &__text {
-    height: 7vh;
+    height: auto;
     overflow: hidden;
     font-size: calc((14/16)*100%);
     line-height: calc((23/16)*100%);
