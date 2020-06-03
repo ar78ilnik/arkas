@@ -74,5 +74,11 @@
     &__nav {
       display: none;
     }
+
+    &__cards:hover {
+      background-color: #ff5252;
+      color: white;
+      transition: .5s;
+    }
   }
 }

@@ -83,6 +83,12 @@
       padding-bottom: 0;
     }
 
+    &__link:hover {
+      color: #c56b22;
+      text-decoration: underline;
+      transition: 0.5s;
+    }
+
     &-nav {
       &__drop {
         display: none;

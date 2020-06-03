@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .news {
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

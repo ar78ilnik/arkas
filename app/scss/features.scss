@@ -24,3 +24,24 @@
     padding-left: 1em;
   }
 }
+
+@media (min-width: 1200px) {
+  .features {
+    &__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__paragraph {
+      padding: 0;
+      margin-top: 1em;
+      ;
+    }
+  }
+}
