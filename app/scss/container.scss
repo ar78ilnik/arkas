@@ -1,24 +1,25 @@
 .container {
-  width: 90%;
+  width: 320px;
   margin: 0 auto;
 
-  &_index-header {
-    height: 40px;
+  &__header {
+    display: grid;
   }
 
-  &_menu {
-    padding-top: 1em;
+  &__button {
+    flex-basis: 80px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    &_index-header {
-      height: 120px;
-    }
-
-    &_menu {
-      padding: 0;
-    }
+  &__site-nav {
+    display: none;
   }
+
+  &__logo {
+    width: 71px;
+    height: auto;
+  }
+
+  &__user {}
+
+  &__offer {}
 }

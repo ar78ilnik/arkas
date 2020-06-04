@@ -4,3 +4,11 @@
   src: local('HelveticaNeueCyr'),
     url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Georgia Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Georgia Bold'),
+    url('../fonts/Georgia_Bold.woff2') format('woff2');
+}
