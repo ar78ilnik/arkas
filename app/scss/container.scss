@@ -4,22 +4,78 @@
 
   &__header {
     display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+      "button logo user"
+      "offer offer offer";
   }
 
   &__button {
-    flex-basis: 80px;
+    grid-area: button;
+    justify-self: start;
   }
 
   &__site-nav {
+    grid-area: site-nav;
     display: none;
   }
 
   &__logo {
     width: 71px;
     height: auto;
+    grid-area: logo;
+    justify-self: center;
   }
 
-  &__user {}
+  &__user {
+    grid-area: user;
+    justify-self: end;
+  }
 
-  &__offer {}
+  &__offer {
+    grid-area: offer;
+  }
+}
+
+@media (min-width: 834px) {
+  .container {
+    width: 100%;
+
+    &__header {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20% 20% 80%;
+      grid-template-areas:
+        "button logo"
+        "offer offer"
+        "site-nav site-nav";
+    }
+
+    &__logo {
+      width: 100%;
+    }
+
+    &__user {
+      display: none;
+    }
+
+    &__button {
+      width: 100%;
+      grid-area: 1/1/2/2;
+      justify-self: start;
+      padding-left: 96px;
+    }
+
+    &__offer {
+      display: none;
+    }
+
+    &__site-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 41px;
+      background-color: #ffffff;
+    }
+  }
 }

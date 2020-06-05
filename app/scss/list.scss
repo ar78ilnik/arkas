@@ -16,3 +16,30 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 834px) {
+  .list {
+    &_nav {
+      width: 634px;
+      height: inherit;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__item {
+      height: inherit;
+    }
+
+    &__link_nav {
+      display: flex;
+      align-items: center;
+      font-family: Georgia;
+      font-size: 16px;
+      line-height: 18px;
+      color: #493B38;
+      text-decoration: none;
+      height: 100%;
+    }
+  }
+}

@@ -12,3 +12,11 @@
   src: local('Georgia Bold'),
     url('../fonts/Georgia_Bold.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'),
+    url('../fonts/Ubuntu-Regular.woff2') format('woff2');
+}

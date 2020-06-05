@@ -1,14 +1,17 @@
 .user {
   width: 40%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 
   &__link {
-    display: block;
-    font-size: 0;
-    line-height: 0;
-    width: 33%;
-    height: 100%;
+    font-family: Ubuntu;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 19px;
   }
 
   &__card {
