@@ -2,11 +2,17 @@
 
 var navToggle = document.querySelector(".button__nav");
 var header = document.querySelector(".header");
+var siteNav = document.querySelector(".container__site-nav");
+var offer = document.querySelector(".container__offer");
 
 navToggle.addEventListener("click", function () {
   if (header.classList.contains("header_opened")) {
     header.classList.remove("header_opened");
+    siteNav.classList.remove("container__site-nav_opened");
+    offer.style.display = "none";
   } else {
     header.classList.add("header_opened");
+    siteNav.classList.add("container__site-nav_opened");
+    offer.style.display = "block";
   }
 });

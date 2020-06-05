@@ -43,3 +43,47 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .list {
+    &_offer {
+      width: 683px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+    }
+
+    &__link_offer {
+      font-size: 16px;
+      line-height: 18px;
+      color: #493B38;
+      position: relative;
+    }
+
+    &__link_offer:hover {
+      content: "";
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      background-color: #FF5252;
+      border-radius: 50%;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-grow: 0;
+    }
+
+    &__link_nav {
+      font-family: Ubuntu;
+      font-weight: normal;
+    }
+  }
+}

@@ -44,7 +44,7 @@
 
     &__header {
       grid-template-columns: 50% 50%;
-      grid-template-rows: 20% 20% 80%;
+      grid-template-rows: 10% 80% 10%;
       grid-template-areas:
         "button logo"
         "offer offer"
@@ -71,11 +71,51 @@
     }
 
     &__site-nav {
+      align-items: stretch;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 41px;
       background-color: #ffffff;
+    }
+
+    &__site-nav_opened {}
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    &__header {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". site-nav user"
+        "logo logo logo"
+        ". offer .";
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__logo {
+      grid-row: 2/3;
+      background-color: #493B38;
+    }
+
+    &__offer {
+      display: block;
+      grid-row: 3 / 4;
+    }
+
+    &__site-nav {
+      height: auto;
+      grid-row: 1/2;
+    }
+
+    &__user {
+      display: block;
+      color: #493B38;
     }
   }
 }

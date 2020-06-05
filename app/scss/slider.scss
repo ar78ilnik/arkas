@@ -1,4 +1,5 @@
 .slider {
+  display: none;
   width: 100%;
   position: relative;
 
@@ -94,7 +95,7 @@
   right: 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .slider {
     width: 80%;
     height: 500px;

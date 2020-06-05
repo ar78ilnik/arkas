@@ -18,3 +18,11 @@
     background-image: url("../img/card.svg");
   }
 }
+
+@media (min-width: 1440px) {
+  .user {
+    &__link {
+      color: #493B38;
+    }
+  }
+}
