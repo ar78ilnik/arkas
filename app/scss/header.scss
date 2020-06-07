@@ -2,7 +2,11 @@
   width: 100%;
   height: 48px;
   background-color: #493B38;
-  margin-bottom: 36px;
+
+  &_main {
+    margin-bottom: 33px;
+    ;
+  }
 
   &_opened {
     height: 286px;

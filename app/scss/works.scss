@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 94px;
 
   &__items {
-    width: 90%;
+    width: 80%;
   }
 
   &__item {
@@ -46,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 834px) {
   .works {
     &__items {
       display: flex;
@@ -60,14 +61,23 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .works {
+    margin-bottom: 94px;
+
     &__items {
       width: 80%;
+      margin-bottom: 65px;
     }
 
     &__item {
       flex-basis: 30%;
+      margin: 0;
+    }
+
+    &__item:hover {
+      box-shadow: 0 0 30px #493b38;
+      transition: .7s all;
     }
   }
 }

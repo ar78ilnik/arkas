@@ -17,6 +17,10 @@
   &__card {
     background-image: url("../img/card.svg");
   }
+
+  &_footer {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {

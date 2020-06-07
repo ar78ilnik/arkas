@@ -8,7 +8,20 @@
   }
 
   &_features {
-    width: 70px;
-    height: 70px;
+    width: 98px;
+    height: 98px;
+    background-color: #493B38;
+    border-radius: 50%;
+    fill: #ffffff;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .icon {
+    &_features {
+      width: 98px;
+      height: 98px;
+    }
   }
 }

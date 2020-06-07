@@ -4,28 +4,10 @@
   background-image: url(../img/line_3%203.png);
 }
 
-.circle::before {
-  content: "";
-  width: 120px;
-  height: 1px;
-  background-color: #eee;
-  position: absolute;
-  top: 3px;
-  right: 12px;
-}
-
-.circle::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  background-color: #eee;
-  position: absolute;
-  top: 3px;
-  left: 12px;
-}
-
 @media (min-width: 1200px) {
   .circle {
+    margin-bottom: 66px;
+
     &_features {
       margin: 0 auto 4em;
     }

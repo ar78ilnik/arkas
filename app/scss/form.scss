@@ -1,1 +1,29 @@
+.form {
+  &_callback {
+    margin-bottom: 10px;
+  }
 
+  &__fieldset {
+    padding: 0;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__label {
+    display: block;
+    height: 50px;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+}

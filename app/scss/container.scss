@@ -117,5 +117,11 @@
       display: block;
       color: #493B38;
     }
+
+    &__news {
+      display: flex;
+      justify-content: space-around;
+      width: 1058px;
+    }
   }
 }

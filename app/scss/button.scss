@@ -8,68 +8,70 @@
     background-color: transparent;
   }
 
-  &_news {
-    background-color: #ff5252;
-    border: none;
-    font-size: inherit;
-    position: absolute;
-    color: #fff;
-    padding: 6px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-
-  &__sale {
+  &__cards {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
     display: block;
-    background-color: #fff;
-    border: 2px solid #729d88;
-    border-radius: 20px;
-    color: #729d88;
-    font-size: calc((16/16)*100%);
-    font-weight: 600;
-    padding: .5em 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-  }
-
-  &__sale:hover {
+    padding: 6px 35px;
+    background-color: #ff5252;
+    border-radius: 49px;
+    border: none;
+    position: absolute;
+    bottom: -23px;
+    left: 93px;
     cursor: pointer;
   }
 
-  &__sale:active {
-    background-color: #729d88;
-    color: #fff;
-  }
-
   &_more {
-    background-color: #fff;
-    border: 2px solid #dd7281;
-    color: #dd7281;
-    padding: .5em 1em;
-    border-radius: .5em;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #493b38;
+    border-radius: 49px;
+    border: none;
+    padding: 6px 35px;
   }
 
-  &__cards {
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ff5252;
-    border-radius: 20px;
-    padding: .2em 2.7em;
-    margin-right: auto;
-    line-height: 25px;
-    background-color: #fff;
+  &_send {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #493b38;
+    border-radius: 49px;
+    border: none;
+    padding: 6px 60px;
+  }
+
+  &_call {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 6px 60px;
+    color: #ffffff;
+    border: none;
+    border-radius: 49px;
+    background-color: #FF5252;
+    margin: 40px auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .button {
-    &_news {
-      padding: 21px;
-    }
-  }
+  .button {}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .button {
     &__nav {
       display: none;
@@ -79,6 +81,18 @@
       background-color: #ff5252;
       color: white;
       transition: .5s;
+    }
+
+    &_news {
+      background-color: #ff5252;
+      border: none;
+      font-size: inherit;
+      position: absolute;
+      color: #fff;
+      padding: 21px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
     }
   }
 }

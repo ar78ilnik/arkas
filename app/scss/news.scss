@@ -1,9 +1,9 @@
 .news {
-  background-image: url(../img/news-bg.png);
+  display: none;
+  background-image: url(../img/background-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 30px;
-  padding-top: 2vh;
   position: relative;
 
   &__fieldset {
@@ -36,11 +36,34 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .news {
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 94px;
+
     &__text {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+    }
+
+    &__input {
+      margin-left: auto;
+    }
+
+    &__span {
+      font-family: Ubuntu;
+      font-size: 12px;
+      line-height: 19px;
+    }
+
+    &__span_title {
+      font-size: 22px;
+      line-height: 19px;
     }
   }
 }
