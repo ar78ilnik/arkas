@@ -1,127 +1,57 @@
 .container {
-  width: 320px;
-  margin: 0 auto;
+    &__header {
+        height: 48px;
+        width: 320px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-  &__header {
-    display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:
-      "button logo user"
-      "offer offer offer";
-  }
+    &__site-nav {
+        display: none;
+    }
 
-  &__button {
-    grid-area: button;
-    justify-self: start;
-  }
+    &__button {
+        order: 0;
+    }
 
-  &__site-nav {
-    grid-area: site-nav;
-    display: none;
-  }
+    &__logo {
+        order: 1;
+    }
 
-  &__logo {
-    width: 71px;
-    height: auto;
-    grid-area: logo;
-    justify-self: center;
-  }
+    &__user {
+        order: 2;
+        height: 100%;
+        flex-basis: 20%;
+    }
 
-  &__user {
-    grid-area: user;
-    justify-self: end;
-  }
-
-  &__offer {
-    grid-area: offer;
-  }
+    &__offer {
+        order: 3;
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 834px) {
-  .container {
-    width: 100%;
+    .container {
+        &__header {
+            width: 95.2%;
+            height: 85px;
+            justify-content: space-between;
+        }
 
-    &__header {
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 10% 80% 10%;
-      grid-template-areas:
-        "button logo"
-        "offer offer"
-        "site-nav site-nav";
+        &__offer {
+            display: block;
+            height: 40px;
+        }
     }
-
-    &__logo {
-      width: 100%;
-    }
-
-    &__user {
-      display: none;
-    }
-
-    &__button {
-      width: 100%;
-      grid-area: 1/1/2/2;
-      justify-self: start;
-      padding-left: 96px;
-    }
-
-    &__offer {
-      display: none;
-    }
-
-    &__site-nav {
-      align-items: stretch;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 41px;
-      background-color: #ffffff;
-    }
-
-    &__site-nav_opened {}
-  }
 }
 
 @media (min-width: 1440px) {
-  .container {
-    &__header {
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        ". site-nav user"
-        "logo logo logo"
-        ". offer .";
+    .container {
+        &__site-nav {
+            display: block;
+        }
     }
-
-    &__button {
-      display: none;
-    }
-
-    &__logo {
-      grid-row: 2/3;
-      background-color: #493B38;
-    }
-
-    &__offer {
-      display: block;
-      grid-row: 3 / 4;
-    }
-
-    &__site-nav {
-      height: auto;
-      grid-row: 1/2;
-    }
-
-    &__user {
-      display: block;
-      color: #493B38;
-    }
-
-    &__news {
-      display: flex;
-      justify-content: space-around;
-      width: 1058px;
-    }
-  }
 }

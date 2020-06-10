@@ -33,5 +33,6 @@
     "gulp-webp": "^4.0.1",
     "node-normalize-scss": "^8.0.1"
   },
+  "dependencies": {},
   "description": ""
 }

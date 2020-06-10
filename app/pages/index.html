@@ -2,490 +2,450 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Аркас</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="utf-8">
+    <title>Аркас</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
-  <svg style="display: none">
-    <symbol id="burger">
-      <svg width="80" height="40" viewBox="0 -6 60 30">
-        <line x1="0" y1="0" x2="60" y2="0" style="stroke: #fff; stroke-width: 2px;" />
-        <line x1="0" y1="8" x2="60" y2="8" style="stroke: #fff; stroke-width: 2px;" />
-        <line x1="0" y1="16" x2="40" y2="16" style="stroke: #fff; stroke-width: 2px;" />
-      </svg>
-    </symbol>
-    <symbol id="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="485.196" height="485.196">
-        <path d="M85.736 45.479H0v30.327h65.892l106.143 242.599h252.508v-30.321H191.875z" />
-        <path d="M151.628 106.131l60.654 151.631h212.261l60.653-151.631H151.628zM404.05 227.435H232.82l-36.396-90.978H440.42l-36.37 90.978zM227.443 348.737c-25.127 0-45.488 20.372-45.488 45.489 0 25.109 20.36 45.49 45.488 45.49 25.109 0 45.476-20.381 45.476-45.49 0-25.117-20.367-45.489-45.476-45.489zm0 60.649c-8.363 0-15.161-6.81-15.161-15.159 0-8.354 6.797-15.163 15.161-15.163 8.366 0 15.164 6.81 15.164 15.163-.001 8.349-6.798 15.159-15.164 15.159zM379.058 348.737c-25.113 0-45.49 20.372-45.49 45.489 0 25.109 20.377 45.49 45.49 45.49s45.485-20.381 45.485-45.49c0-25.117-20.372-45.489-45.485-45.489zm0 60.649c-8.35 0-15.158-6.81-15.158-15.159 0-8.354 6.809-15.163 15.158-15.163 8.345 0 15.163 6.81 15.163 15.163 0 8.349-6.809 15.159-15.163 15.159z" />
-      </svg>
-    </symbol>
-    <symbol id="search" viewBox="0 0 100 100">
-      <svg xmlns="http://www.w3.org/2000/svg" width="485.196" height="485.196">
-        <path d="M85.736 45.479H0v30.327h65.892l106.143 242.599h252.508v-30.321H191.875z" />
-        <path d="M151.628 106.131l60.654 151.631h212.261l60.653-151.631H151.628zM404.05 227.435H232.82l-36.396-90.978H440.42l-36.37 90.978zM227.443 348.737c-25.127 0-45.488 20.372-45.488 45.489 0 25.109 20.36 45.49 45.488 45.49 25.109 0 45.476-20.381 45.476-45.49 0-25.117-20.367-45.489-45.476-45.489zm0 60.649c-8.363 0-15.161-6.81-15.161-15.159 0-8.354 6.797-15.163 15.161-15.163 8.366 0 15.164 6.81 15.164 15.163-.001 8.349-6.798 15.159-15.164 15.159zM379.058 348.737c-25.113 0-45.49 20.372-45.49 45.489 0 25.109 20.377 45.49 45.49 45.49s45.485-20.381 45.485-45.49c0-25.117-20.372-45.489-45.485-45.489zm0 60.649c-8.35 0-15.158-6.81-15.158-15.159 0-8.354 6.809-15.163 15.158-15.163 8.345 0 15.163 6.81 15.163 15.163 0 8.349-6.809 15.159-15.163 15.159z" />
-      </svg>
-    </symbol>
-    <symbol id="cat1" viewBox="0 0 100 100">
-      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-        <g data-name="Layer 2">
-          <path d="M12 21a1 1 0 01-.71-.29 1 1 0 010-1.42l8-8a1 1 0 011.42 1.42l-8 8A1 1 0 0112 21zM12.5 14a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm0-2a.5.5 0 10.5.5.5.5 0 00-.5-.5zM19.5 21a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5zm0-2a.5.5 0 10.5.5.5.5 0 00-.5-.5z" />
-          <path d="M19.71 28.5a1 1 0 01-.83-.44l-.23-.34a3.16 3.16 0 00-5.3 0l-.23.34a1 1 0 01-1.83-.59v-.17a3.52 3.52 0 00-1.42-3A3.09 3.09 0 007 23.92l-.36.13A1 1 0 015.5 22.5a3.57 3.57 0 00.5-3.3A3.28 3.28 0 003.84 17h-.13a1 1 0 010-1.92h.13A3.28 3.28 0 006 12.8a3.57 3.57 0 00-.5-3.3A1 1 0 016.63 8l.37.08a3.09 3.09 0 002.89-.42 3.52 3.52 0 001.42-3v-.13a1 1 0 011.83-.59l.23.34A3.19 3.19 0 0016 5.72a3.19 3.19 0 002.65-1.44l.23-.34a1 1 0 011.83.59v.17a3.52 3.52 0 001.42 3 3.09 3.09 0 002.87.38l.37-.08a1 1 0 011.13 1.5 3.57 3.57 0 00-.5 3.3 3.28 3.28 0 002.2 2.2h.13a1 1 0 010 1.92h-.13A3.28 3.28 0 0026 19.2a3.57 3.57 0 00.54 3.3 1 1 0 01-1.13 1.55l-.41-.13a3.09 3.09 0 00-2.89.42 3.52 3.52 0 00-1.42 3v.17a1 1 0 01-.69 1 1.18 1.18 0 01-.29-.01zM16 24.28a5.1 5.1 0 013 1 5.42 5.42 0 012-2.56 5.11 5.11 0 013-1 5.64 5.64 0 01.1-3.15A5.5 5.5 0 0125.83 16a5.5 5.5 0 01-1.78-2.58 5.64 5.64 0 01-.1-3.15 5.11 5.11 0 01-3-1A5.42 5.42 0 0119 6.73a5.1 5.1 0 01-3 1 5.1 5.1 0 01-3-1 5.36 5.36 0 01-1.91 2.55 5.11 5.11 0 01-3 1A5.64 5.64 0 018 13.42 5.5 5.5 0 016.17 16 5.5 5.5 0 018 18.58a5.64 5.64 0 01.1 3.15 5.11 5.11 0 013 1 5.36 5.36 0 011.9 2.54 5.1 5.1 0 013-.99z" />
-        </g>
-        <path fill="none" d="M0 0h32v32H0z" />
-      </svg>
-    </symbol>
-    <symbol id="more" viewBox="0 0 25 25">
-      <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-        <polyline points="10,10 15,15 10,20" style="fill:none;stroke:#dd7281;stroke-width:1" />
-      </svg>
-    </symbol>
-    <symbol id="category1" viewBox="0 0 20 20">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlns:v="https://vecta.io/nano">
-        <path d="M490.3 434.9H21.7l7.5 7.5V195.8l-7.5 7.5h468.6l-7.5-7.5v246.6c0 9.7 15 9.7 15 0V195.8c0-4.1-3.4-7.5-7.5-7.5H21.7c-4.1 0-7.5 3.4-7.5 7.5v246.6c0 4.1 3.4 7.5 7.5 7.5h468.6c9.7 0 9.7-15 0-15z" />
-        <path d="M490.3 434.9H21.7l7.5 7.5V273.8l-7.5 7.5h468.6l-7.5-7.5v168.6c0 9.7 15 9.7 15 0V273.8c0-4.1-3.4-7.5-7.5-7.5H21.7c-4.1 0-7.5 3.4-7.5 7.5v168.6c0 4.1 3.4 7.5 7.5 7.5h468.6c9.7 0 9.7-15 0-15z" />
-        <path d="M164.2 195.8v246.6c0 9.7 15 9.7 15 0V195.8c0-9.7-15-9.7-15 0h0z" />
-        <path d="M490.3 434.9H171.6l7.5 7.5V273.8l-7.5 7.5h318.7l-7.5-7.5v168.6c0 9.7 15 9.7 15 0V273.8c0-4.1-3.4-7.5-7.5-7.5H171.6c-4.1 0-7.5 3.4-7.5 7.5v168.6c0 4.1 3.4 7.5 7.5 7.5h318.7c9.7 0 9.7-15 0-15z" />
-        <path d="M323.5 273.8v168.6c0 9.7 15 9.7 15 0V273.8c0-9.7-15-9.7-15 0h0zm-14.2-30.7h43.5c9.7 0 9.7-15 0-15h-43.5c-9.7 0-9.7 15 0 15h0z" />
-        <path d="M490.3 266.3H171.6l7.5 7.5v-78l-7.5 7.5h318.7l-7.5-7.5v78c0 9.7 15 9.7 15 0v-78c0-4.1-3.4-7.5-7.5-7.5H171.6c-4.1 0-7.5 3.4-7.5 7.5v78c0 4.1 3.4 7.5 7.5 7.5h318.7c9.7 0 9.7-15 0-15zm-347 141.1H50.1l7.5 7.5V301.3l-7.5 7.5h93.2l-7.5-7.5v113.6c0 9.7 15 9.7 15 0V301.3c0-4.1-3.4-7.5-7.5-7.5H50.1c-4.1 0-7.5 3.4-7.5 7.5v113.6c0 4.1 3.4 7.5 7.5 7.5h93.2c9.6 0 9.6-15 0-15z" />
-        <path d="M171.7 434.9h-150l7.5 7.5V273.8l-7.5 7.5h150l-7.5-7.5v168.6c0 9.7 15 9.7 15 0V273.8c0-4.1-3.4-7.5-7.5-7.5h-150c-4.1 0-7.5 3.4-7.5 7.5v168.6c0 4.1 3.4 7.5 7.5 7.5h150c9.7 0 9.7-15 0-15zm131.6-55v-43.5c0-9.7-15-9.7-15 0v43.5c0 9.6 15 9.6 15 0h0zm70.4 0v-43.5c0-9.7-15-9.7-15 0v43.5c0 9.6 15 9.6 15 0h0zM74.1 235.6c-.5 11.7-17.6 11.7-18.1 0-.4-11.6 17.7-11.6 18.1 0 .4 9.6 15.4 9.7 15 0-.5-13.5-10.6-23.5-24-24s-23.5 11.4-24 24c-.5 13.4 11.4 23.5 24 24 13.4.5 23.5-11.4 24-24 .4-9.6-14.6-9.6-15 0zm63.2 0c-.5 11.7-17.6 11.7-18.1 0-.5-11.6 17.6-11.6 18.1 0 .4 9.6 15.4 9.7 15 0-.5-13.5-10.6-23.5-24-24s-23.5 11.4-24 24c-.5 13.4 11.4 23.5 24 24 13.4.5 23.5-11.4 24-24 .4-9.6-14.6-9.6-15 0zm-93.1-50.9l7.8 14.9c1.2 2.3 3.9 3.7 6.5 3.7h76.3c2.5 0 5.3-1.4 6.5-3.7 6.6-12.5 13.9-24.5 13.9-39.2v-28.1c0-4.1-3.4-7.5-7.5-7.5H45.5c-4.1 0-7.5 3.4-7.5 7.5.1 17.7-2 36.1 6.2 52.4 4.3 8.7 17.3 1.1 13-7.6-4.1-8.2-4.1-16.5-4.1-25.4v-19.4l-7.5 7.5h102.2l-7.5-7.5v27.5c0 12.1-6.5 21.9-11.9 32.2 2.2-1.2 4.3-2.5 6.5-3.7H58.6c2.2 1.2 4.3 2.5 6.5 3.7l-7.8-14.9c-4.7-8.6-17.6-1-13.1 7.6z" />
-        <path d="M171.7 140.9h-23.9c-9.7 0-9.7 15 0 15h23.9c9.7 0 9.7-15 0-15h0zm-126.1 0H21.7c-9.7 0-9.7 15 0 15h23.9c9.7 0 9.7-15 0-15h0zm247.8-49.4H490c9.7 0 9.7-15 0-15H293.4c-9.7 0-9.7 15 0 15h0z" />
-        <path d="M374.3 131.9V70.5c0-9.7-15-9.7-15 0v61.4c0 9.7 15 9.7 15 0h0z" />
-        <use xlink:href="#B" />
-        <path d="M465.1 131V69.5c0-9.7-15-9.7-15 0V131c0 9.7 15 9.7 15 0h0z" />
-        <use xlink:href="#B" x="90.8" y="-0.9" />
-        <defs>
-          <path id="B" d="M375.9 148.4c-.5 11.7-17.6 11.7-18.1 0-.5-11.6 17.6-11.6 18.1 0 .4 9.6 15.4 9.7 15 0-.5-13.5-10.6-23.5-24-24s-23.5 11.4-24 24c-.5 13.4 11.4 23.5 24 24 13.4.5 23.5-11.4 24-24 .3-9.6-14.7-9.6-15 0z" />
-        </defs>
-      </svg>
-
-    </symbol>
-    <symbol id="category2" viewBox="-3 -5 30 30">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" xmlns:v="https://vecta.io/nano">
-        <path d="M2 7h20v3h-2l1 9h-2.5l-.56-5H6.06l-.56 5H3l1-9H2V7m15.5 3h-11l-.2 2H17.7l-.2-2z" /></svg>
-    </symbol>
-
-  </svg>
-  <header class="header header_main">
-    <div class="container container__header">
-      <div class="container container__button">
-        <button class="button button__nav" type="button">
-          <svg class="icon">
-            <use xlink:href="#burger"></use>
-          </svg>
-          Open
-        </button>
-      </div>
-      <div class="container container__site-nav">
-        <ul class="list list_nav">
-          <li class="list__item">
-            <a class="list__link list__link_nav" href="#">О компании</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_nav" href="#">Доставка и оплата</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_nav" href="#">Наши работы</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_nav" href="#">Блог новости</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_nav" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="container container__user">
-        <section class="user">
-          <a class="user__link" href="tel:8(918)000-00-00">8(918)000-00-00</a>
-          <section class="social">
-            <ul class="list">
-              <li class="list__item">Youtube</li>
-              <li class="list__item">Instagram</li>
-              <li class="list__item">Facebook</li>
-            </ul>
-          </section>
-        </section>
-      </div>
-      <div class="container container__logo">
-        <section class="logo">
-          <img src="../img/logo.png" alt="" width="71" height="38">
-        </section>
-      </div>
-      <div class="container container__offer">
-        <ul class="list list_offer">
-          <li class="list__item">
-            <a class="list__link list__link_offer" href="#">Кухни</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_offer" href="#">Спальни</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_offer" href="#">Гостиные</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link list__link_offer" href="#">Аксессуары</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-    <div class="slider">
-      <div class="slider-item">
-        <div class="slider__container">
-          <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
-          <span class="slider-item__name">PRESTIGE</span>
-          <span class="slider-item__from">Оригинальная Италия</span>
-          <div class="slider-item__price">от 420 000</div>
-          <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+    <header class="header header_main">
+        <div class="container container__header">
+            <div class="container container__site-nav">
+                <ul class="list list_nav">
+                    <li class="list__item">
+                        <a class="list__link list__link_nav" href="#">О компании</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_nav" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_nav" href="#">Наши работы</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_nav" href="#">Блог новости</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_nav" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container container__button">
+                <button class="button button__nav" type="button">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#burger"></use>
+                    </svg>
+                    Open
+                </button>
+            </div>
+            <div class="container container__user">
+                <section class="user">
+                    <a class="user__link" href="tel:8(918)000-00-00">8(918)000-00-00</a>
+                    <section class="social social_header">
+                        <ul class="list list_header-social">
+                            <li class="list__item list__item_header-social">
+                                <a href="#" class="list__link list__link_header-social">
+                                    <svg class="icon icon_social">
+                                        <use xlink:href="img/sprite.svg#youtube"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                            <li class="list__item list__item_header-social">
+                                <a href="#" class="list__link list__link_header-social">
+                                    <svg class="icon icon_social">
+                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                            <li class="list__item list__item_header-social">
+                                <a href="#" class="list__link list__link_header-social">
+                                    <svg class="icon icon_social">
+                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+            <div class="container container__logo">
+                <section class="logo">
+                    <img src="../img/logo.png" alt="" width="71" height="38">
+                </section>
+            </div>
+            <div class="container container__offer">
+                <ul class="list list_offer">
+                    <li class="list__item">
+                        <a class="list__link list__link_offer" href="#">Кухни</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_offer" href="#">Спальни</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_offer" href="#">Гостиные</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link list__link_offer" href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="slider-item">
-        <div class="slider__container">
-          <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
-          <span class="slider-item__name">Corte ZARI</span>
-          <span class="slider-item__from">Италия, Россия</span>
-          <div class="slider-item__price">Качество выше цены</div>
-          <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
-        </div>
-      </div>
-      <div class="slider-item">
-        <div class="slider__container">
-          <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
-          <span class="slider-item__name">Кровать Вегас</span>
-          <span class="slider-item__from">Сделано в России 115 000</span>
-          <div class="slider-item__price">от 420 000 Рублей</div>
-          <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
-        </div>
-      </div>
-      <div class="slider-item">
-        <div class="slider__container">
-          <span class="slider-item__title">ЭКСКЛЮЗИВНЫЕ ВОПЛОЩЕНИЯ</span>
-          <span class="slider-item__name">Кровать Вегас</span>
-          <span class="slider-item__from">Идеальное сочетание</span>
-          <div class="slider-item__price">Разработка дизайн проектов</div>
-          <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
-        </div>
-      </div>
-      <a class="prev" onclick="minusSlide()">
-        <svg width="40" height="40">
-          <!--
+    </header>
+    <main class="main">
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
+                    <span class="slider-item__name">PRESTIGE</span>
+                    <span class="slider-item__from">Оригинальная Италия</span>
+                    <div class="slider-item__price">от 420 000</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
+                    <span class="slider-item__name">Corte ZARI</span>
+                    <span class="slider-item__from">Италия, Россия</span>
+                    <div class="slider-item__price">Качество выше цены</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ВЫСОКИЙ ДИЗАЙН</span>
+                    <span class="slider-item__name">Кровать Вегас</span>
+                    <span class="slider-item__from">Сделано в России 115 000</span>
+                    <div class="slider-item__price">от 420 000 Рублей</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider__container">
+                    <span class="slider-item__title">ЭКСКЛЮЗИВНЫЕ ВОПЛОЩЕНИЯ</span>
+                    <span class="slider-item__name">Кровать Вегас</span>
+                    <span class="slider-item__from">Идеальное сочетание</span>
+                    <div class="slider-item__price">Разработка дизайн проектов</div>
+                    <a href="#" class="slider-item__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <a class="prev" onclick="minusSlide()">
+                <svg width="40" height="40">
+                    <!--
           <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
           <line x1="0" y1="7" x2="15" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
           <line x1="0" y1="7" x2="15" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
           -->
-          <circle cx="20" cy="20" r="20" fill="rgba(207,207,207,0.7)" stroke="rgb(181,181,181)"></circle>
-          <path d="M 25,10 L 15,20 L 25,30" fill="transparent" stroke="black"></path>
-        </svg>
-      </a>
-      <a class="next" onclick="plusSlide()">
-        <svg width="40" height="40">
-          <!--
+                    <circle cx="20" cy="20" r="20" fill="rgba(207,207,207,0.7)" stroke="rgb(181,181,181)"></circle>
+                    <path d="M 25,10 L 15,20 L 25,30" fill="transparent" stroke="black"></path>
+                </svg>
+            </a>
+            <a class="next" onclick="plusSlide()">
+                <svg width="40" height="40">
+                    <!--
           <line x1="0" y1="7" x2="92" y2="7" style="stroke: #883eca; stroke-width: 3px;" />
           <line x1="92" y1="7" x2="77" y2="0" style="stroke: #883eca; stroke-width: 3px;" />
           <line x1="92" y1="7" x2="77" y2="14" style="stroke: #883eca; stroke-width: 3px;" />
         -->
-          <circle cx="20" cy="20" r="20" fill="rgba(207,207,207,0.7)" stroke="rgb(181,181,181)"></circle>
-          <path d="M 10,10 L 30,20 L 10,30" fill="transparent" stroke="black"></path>
-        </svg>
-      </a>
-    </div>
-    <ul class="list list_categories">
-      <li class="list__item list__item_categories">
-        <a class="list__link list__link_categories" href="#">
-          О компании
-          <img src="img/dialma-brown.png" alt="">
-        </a>
-      </li>
-      <li class="list__item list__item_categories">
-        <a class="list__link list__link_categories" href="#">
-          О компании
-          <img src="img/angelo.png" alt="">
-        </a>
-      </li>
-      <li class="list__item list__item_categories">
-        <a class="list__link list__link_categories" href="#">
-          О компании
-          <img src="img/soluzioni.png" alt="">
-        </a>
-      </li>
-      <li class="list__item list__item_categories">
-        <a class="list__link list__link_categories" href="#">
-          О компании
-          <img src="img/ambassador.png" alt="">
-        </a>
-      </li>
-      <li class="list__item list__item_categories">
-        <a class="list__link list__link_categories" href="#">
-          О компании
-          <img src="img/dialma-brown.png" alt="">
-        </a>
-      </li>
+                    <circle cx="20" cy="20" r="20" fill="rgba(207,207,207,0.7)" stroke="rgb(181,181,181)"></circle>
+                    <path d="M 10,10 L 30,20 L 10,30" fill="transparent" stroke="black"></path>
+                </svg>
+            </a>
+        </div>
+        <ul class="list list_categories">
+            <li class="list__item list__item_categories">
+                <a class="list__link list__link_categories" href="#">
+                    О компании
+                    <img src="img/dialma-brown.png" alt="">
+                </a>
+            </li>
+            <li class="list__item list__item_categories">
+                <a class="list__link list__link_categories" href="#">
+                    О компании
+                    <img src="img/angelo.png" alt="">
+                </a>
+            </li>
+            <li class="list__item list__item_categories">
+                <a class="list__link list__link_categories" href="#">
+                    О компании
+                    <img src="img/soluzioni.png" alt="">
+                </a>
+            </li>
+            <li class="list__item list__item_categories">
+                <a class="list__link list__link_categories" href="#">
+                    О компании
+                    <img src="img/ambassador.png" alt="">
+                </a>
+            </li>
+            <li class="list__item list__item_categories">
+                <a class="list__link list__link_categories" href="#">
+                    О компании
+                    <img src="img/dialma-brown.png" alt="">
+                </a>
+            </li>
 
-    </ul>
-    <section class="cards">
-      <div class="title__h2">
-        <span class="title__text">В тренде</span>
-        <div class="circle"></div>
-      </div>
-      <div class="cards__items">
-        <div class="cards__item">
-          <a href="catalog/kuhni.html" class="cards__link">
-            <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
-            <div class="cards__text">
-              <span class="cards__price">Гостиная Dama</span>
-              <span class="cards__price">4 300 р</span>
-            </div>
-          </a>
-          <button class="button button__cards" type="button">Заказать</button>
-        </div>
-        <div class="cards__item">
-          <a href="catalog/kuhni.html" class="cards__link">
-            <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
-            <div class="cards__text">
-              <span class="cards__price">Гостиная Dama</span>
-              <span class="cards__price">4 300 р</span>
-            </div>
-          </a>
-          <button class="button button__cards" type="button">Заказать</button>
-        </div>
-        <div class="cards__item">
-          <a href="catalog/kuhni.html" class="cards__link">
-            <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
-            <div class="cards__text">
-              <span class="cards__price">Гостиная Dama</span>
-              <span class="cards__price">4 300 р</span>
-            </div>
-          </a>
-          <button class="button button__cards" type="button">Заказать</button>
-        </div>
-        <div class="cards__item">
-          <a href="catalog/kuhni.html" class="cards__link">
-            <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
-            <div class="cards__text">
-              <span class="cards__price">Гостиная Dama</span>
-              <span class="cards__price">4 300 р</span>
-            </div>
-          </a>
-          <button class="button button__cards" type="button">Заказать</button>
-        </div>
-      </div>
-    </section>
-    <section class="features container">
-      <div class="title__h2 title__h2_features">
-        <span class="title__text">Преимущества</span>
-        <div class="circle"></div>
-      </div>
-      <ul class="list list_features">
-        <li class="list__item list__item_features">
-          <div class="list__link list__link_features">
-            <span class="list__text">Бесплатная доставка по городу</span>
-            <svg class="icon icon_features">
-              <use xlink:href="img/sprite-features.svg#features1"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="list__item list__item_features">
-          <div class="list__link list__link_features">
-            <span class="list__text">Разработка дизайн проекта</span>
-            <svg class="icon icon_features">
-              <use xlink:href="img/sprite-features.svg#features2"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="list__item list__item_features">
-          <div class="list__link list__link_features">
-            <span class="list__text">25 лет на рынке</span>
-            <svg class="icon icon_features">
-              <use xlink:href="img/sprite-features.svg#features3"></use>
-            </svg>
-          </div>
-        </li>
-        <li class="list__item list__item_features">
-          <div class="list__link list__link_features">
-            <span class="list__text">Комплексные интерьерные решения</span>
-            <svg class="icon icon_features">
-              <use xlink:href="img/sprite-features.svg#features4"></use>
-            </svg>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="works">
-      <div class="title__h2">
-        <span class="title__text">Наши работы</span>
-        <div class="circle"></div>
-      </div>
-      <div class="works__items">
-        <div class="works__item">
-          <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="works__news">Проект</span>
-          <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-        </div>
-        <div class="works__item">
-          <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="works__news">Проект</span>
-          <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-        </div>
-        <div class="works__item">
-          <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="works__news">Проект</span>
-          <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-        </div>
-      </div>
-      <button class="button button_more" type="button">Увидеть больше</button>
-    </section>
-    <section class="news">
-      <div class="container container__news">
-        <p class="news__text">
-          <span class="news__span news__span_title">Подпишитесь на новости</span>
-          <span class="news__span">Всегда быть в курсе последних поступлений и акций</span>
-        </p>
-        <form action="" class="form">
-          <fieldset class="form__fieldset">
-            <label>
-              <input class="news__input" type="email" placeholder="Введите ваш e-mail">
-              <button class="button button_news" type="submit">OK</button>
-            </label>
-          </fieldset>
-        </form>
-      </div>
-    </section>
-    <section class="press">
-      <div class="press__items">
-        <div class="press__item">
-          <a href="novosti.html" class="press__link">
-            <div class="press__content">
-              <span class="press__news">НОВОСТИ</span>
-              <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-              <span class="press__date">24 мая 2020</span>
-            </div>
-          </a>
-        </div>
-        <div class="press__item">
-          <a href="novosti.html" class="press__link">
-            <div class="press__content">
-              <span class="press__news">НОВОСТИ</span>
-              <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-              <span class="press__date">24 мая 2020</span>
-            </div>
-          </a>
-        </div>
-        <div class="press__item">
-          <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="press__news">НОВОСТИ</span>
-          <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-          <span class="press__date">24 мая 2020</span>
-        </div>
-        <div class="press__item">
-          <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="press__news">НОВОСТИ</span>
-          <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-          <span class="press__date">24 мая 2020</span>
-        </div>
-        <div class="press__item">
-          <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
-          <span class="press__news">НОВОСТИ</span>
-          <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-          <span class="press__date">24 мая 2020</span>
-        </div>
-        <div class="press__item press__item_link">
-          <button class="button button_more" type="button">Увидеть больше</button>
-        </div>
-      </div>
-    </section>
-    <section class="callback">
-      <div class="title__h2 title__h2_callback">
-        <span class="title__callback">Хотите сделать заказ? Появились вопросы?</span>
-        <span class="title__callback_two">Оставьте свои контакты и мы Вам все расскажем</span>
-      </div>
-      <form action="" class="form form_callback">
-        <fieldset class="form__fieldset">
-          <label class="form__label">
-            <input class="form__input" type="text" placeholder="Ваше имя">
-          </label>
-          <label class="form__label">
-            <input class="form__input" type="tel" placeholder="Контактынй телефон">
-          </label>
-        </fieldset>
-      </form>
-      <button class="button button_send" type="send">Отправить</button>
-    </section>
-    <section class="map">
-      <div class="map__item"></div>
-      <div class="map__info">
-        <div class="title__h2">
-          <span class="title__callback">Салон интерьера Мебель. Свет. Декор. "Кухни в интерьере"</span>
-        </div>
-        <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Аркас</span>
-          Контакты:
-          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            Адрес:
-            <span itemprop="streetAddress">Суворова, 117</span>
-            <span itemprop="postalCode">350000</span>
-            <span itemprop="addressLocality">Краснодар</span>,
-          </div>
-          Телефон:<span itemprop="telephone">+7(861)2625777</span>,
-          E-mail: <span itemprop="email">salon@arkas-m.ru</span>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <ul class="list list_footer">
-      <li class="list__item">
-        <a class="list__link list__link_footer" href="#">Кухни</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list__link_footer" href="#">Спальни</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list__link_footer" href="#">Гостиные</a>
-      </li>
-      <li class="list__item">
-        <a class="list__link list__link_footer" href="#">Аксессуары</a>
-      </li>
-    </ul>
-    <section class="user user_footer">
-      <a class="user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
-      <section class="social social_footer">
-        <ul class="list list_footer-social">
-          <li class="list__item list__item_footer-social">
-            <a href="#" class="list__link list__link_footer-social">
-              <svg class="icon icon_social">
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
-              Instagram</a>
-          </li>
-          <li class="list__item list__item_footer-social">
-            <a href="#" class="list__link list__link_footer-social">
-              <svg class="icon icon_social">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-              Instagram</a>
-          </li>
-          <li class="list__item list__item_footer-social">
-            <a href="#" class="list__link list__link_footer-social">
-              <svg class="icon icon_social">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-              Instagram</a>
-          </li>
         </ul>
-      </section>
-    </section>
-    <section class="copyright">
-      <span class="copyright__text">© 2010 — 2020 Салон Мебель. Свет. Декор. «Кухни в интерьере». Копирование контента запрещено и преследуется законом.</span>
-    </section>
-    <button class="button button_call" type="button">Сделать заказ</button>
-  </footer>
-  <script src="../js/slider.js"></script>
-  <script src="../js/toogle.js"></script>
+        <section class="cards">
+            <div class="title__h2">
+                <span class="title__text">В тренде</span>
+                <div class="circle"></div>
+            </div>
+            <div class="cards__items">
+                <div class="cards__item">
+                    <a href="catalog/kuhni.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
+                <div class="cards__item">
+                    <a href="catalog/kuhni.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
+                <div class="cards__item">
+                    <a href="catalog/kuhni.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
+                <div class="cards__item">
+                    <a href="catalog/kuhni.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
+            </div>
+        </section>
+        <section class="features container">
+            <div class="title__h2 title__h2_features">
+                <span class="title__text">Преимущества</span>
+                <div class="circle"></div>
+            </div>
+            <ul class="list list_features">
+                <li class="list__item list__item_features">
+                    <div class="list__link list__link_features">
+                        <span class="list__text">Бесплатная доставка по городу</span>
+                        <svg class="icon icon_features">
+                            <use xlink:href="img/sprite-features.svg#features1"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="list__item list__item_features">
+                    <div class="list__link list__link_features">
+                        <span class="list__text">Разработка дизайн проекта</span>
+                        <svg class="icon icon_features">
+                            <use xlink:href="img/sprite-features.svg#features2"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="list__item list__item_features">
+                    <div class="list__link list__link_features">
+                        <span class="list__text">25 лет на рынке</span>
+                        <svg class="icon icon_features">
+                            <use xlink:href="img/sprite-features.svg#features3"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="list__item list__item_features">
+                    <div class="list__link list__link_features">
+                        <span class="list__text">Комплексные интерьерные решения</span>
+                        <svg class="icon icon_features">
+                            <use xlink:href="img/sprite-features.svg#features4"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="works">
+            <div class="title__h2">
+                <span class="title__text">Наши работы</span>
+                <div class="circle"></div>
+            </div>
+            <div class="works__items">
+                <div class="works__item">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="works__news">Проект</span>
+                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                </div>
+                <div class="works__item">
+                    <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="works__news">Проект</span>
+                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                </div>
+                <div class="works__item">
+                    <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="works__news">Проект</span>
+                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                </div>
+            </div>
+            <button class="button button_more" type="button">Увидеть больше</button>
+        </section>
+        <section class="news">
+            <div class="container container__news">
+                <p class="news__text">
+                    <span class="news__span news__span_title">Подпишитесь на новости</span>
+                    <span class="news__span">Всегда быть в курсе последних поступлений и акций</span>
+                </p>
+                <form action="" class="form">
+                    <fieldset class="form__fieldset">
+                        <label>
+                            <input class="news__input" type="email" placeholder="Введите ваш e-mail">
+                            <button class="button button_news" type="submit">OK</button>
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="press">
+            <div class="press__items">
+                <div class="press__item">
+                    <a href="novosti.html" class="press__link">
+                        <div class="press__content">
+                            <span class="press__news">НОВОСТИ</span>
+                            <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                            <span class="press__date">24 мая 2020</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="press__item">
+                    <a href="novosti.html" class="press__link">
+                        <div class="press__content">
+                            <span class="press__news">НОВОСТИ</span>
+                            <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                            <span class="press__date">24 мая 2020</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="press__item">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="press__news">НОВОСТИ</span>
+                    <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    <span class="press__date">24 мая 2020</span>
+                </div>
+                <div class="press__item">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="press__news">НОВОСТИ</span>
+                    <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    <span class="press__date">24 мая 2020</span>
+                </div>
+                <div class="press__item">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
+                    <span class="press__news">НОВОСТИ</span>
+                    <p class="press__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    <span class="press__date">24 мая 2020</span>
+                </div>
+                <div class="press__item press__item_link">
+                    <button class="button button_more" type="button">Увидеть больше</button>
+                </div>
+            </div>
+        </section>
+        <section class="callback">
+            <div class="title__h2 title__h2_callback">
+                <span class="title__callback">Хотите сделать заказ? Появились вопросы?</span>
+                <span class="title__callback_two">Оставьте свои контакты и мы Вам все расскажем</span>
+            </div>
+            <form action="" class="form form_callback">
+                <fieldset class="form__fieldset">
+                    <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Ваше имя">
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input" type="tel" placeholder="Контактынй телефон">
+                    </label>
+                </fieldset>
+            </form>
+            <button class="button button_send" type="send">Отправить</button>
+        </section>
+        <section class="map">
+            <div class="map__item"></div>
+            <div class="map__info">
+                <div class="title__h2">
+                    <span class="title__callback">Салон интерьера Мебель. Свет. Декор. "Кухни в интерьере"</span>
+                </div>
+                <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
+                    <span itemprop="name">Аркас</span>
+                    Контакты:
+                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        Адрес:
+                        <span itemprop="streetAddress">Суворова, 117</span>
+                        <span itemprop="postalCode">350000</span>
+                        <span itemprop="addressLocality">Краснодар</span>,
+                    </div>
+                    Телефон:<span itemprop="telephone">+7(861)2625777</span>,
+                    E-mail: <span itemprop="email">salon@arkas-m.ru</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="list list_footer">
+            <li class="list__item">
+                <a class="list__link list__link_footer" href="#">Кухни</a>
+            </li>
+            <li class="list__item">
+                <a class="list__link list__link_footer" href="#">Спальни</a>
+            </li>
+            <li class="list__item">
+                <a class="list__link list__link_footer" href="#">Гостиные</a>
+            </li>
+            <li class="list__item">
+                <a class="list__link list__link_footer" href="#">Аксессуары</a>
+            </li>
+        </ul>
+        <div class="footer__info">
+            <section class="user user_footer">
+                <a class="user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
+                <section class="social social_footer">
+                    <ul class="list list_footer-social">
+                        <li class="list__item list__item_footer-social">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
+                                    <use xlink:href="img/sprite.svg#youtube"></use>
+                                </svg>
+                                Instagram</a>
+                        </li>
+                        <li class="list__item list__item_footer-social">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg>
+                                Instagram</a>
+                        </li>
+                        <li class="list__item list__item_footer-social">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                                Instagram</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="copyright">
+                <span class="copyright__text">© 2010 — 2020 Салон Мебель. Свет. Декор. «Кухни в интерьере». Копирование контента запрещено и преследуется законом.</span>
+            </section>
+            <button class="button button_call" type="button">Сделать заказ</button>
+        </div>
+    </footer>
+    <script src="../js/slider.js"></script>
+    <script src="../js/toogle.js"></script>
 </body>
 
 </html>
