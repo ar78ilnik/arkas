@@ -9,3 +9,11 @@
     padding: 0 20px 20px 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .social {
+    &_footer {
+      display: flex;
+    }
+  }
+}

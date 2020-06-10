@@ -59,7 +59,22 @@
     &__h2_features {
       margin-top: 52px;
       margin-bottom: 45px;
-      height: 60px;
+      height: 75px;
+    }
+
+    &__h2_callback {
+      width: 50%;
+    }
+
+    &__callback {
+      font-size: 24px;
+      line-height: 49px;
+      letter-spacing: 1.5px;
+      text-align: left;
+    }
+
+    &__callback_two {
+      width: auto;
     }
   }
 }

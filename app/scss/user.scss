@@ -25,8 +25,25 @@
 
 @media (min-width: 1440px) {
   .user {
+    &_footer {
+      display: flex;
+      width: 200px;
+      height: auto;
+      justify-content: space-between;
+    }
+
     &__link {
       color: #493B38;
+
+      &_footer {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ffffff;
+        text-decoration: none;
+      }
     }
   }
 }

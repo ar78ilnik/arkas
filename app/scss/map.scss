@@ -19,3 +19,22 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: 1440px) {
+  .map {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 94px;
+
+    &__item {
+      width: 500px;
+      height: 275px;
+    }
+
+    &__info {
+      width: 320px;
+    }
+  }
+}

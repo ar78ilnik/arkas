@@ -399,8 +399,8 @@
       </div>
     </section>
     <section class="callback">
-      <div class="title__h2">
-        <span class="title__callback">Хотите сделать заказ?<br> Появились вопросы?</span>
+      <div class="title__h2 title__h2_callback">
+        <span class="title__callback">Хотите сделать заказ? Появились вопросы?</span>
         <span class="title__callback_two">Оставьте свои контакты и мы Вам все расскажем</span>
       </div>
       <form action="" class="form form_callback">
@@ -417,47 +417,70 @@
     </section>
     <section class="map">
       <div class="map__item"></div>
-      <div class="title__h2">
-        <span class="title__callback">Салон интерьера Мебель. Свет. Декор. "Кухни в интерьере"</span>
-      </div>
-      <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
-        <span itemprop="name">Аркас</span>
-        Контакты:
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          Адрес:
-          <span itemprop="streetAddress">Суворова, 117</span>
-          <span itemprop="postalCode">350000</span>
-          <span itemprop="addressLocality">Краснодар</span>,
+      <div class="map__info">
+        <div class="title__h2">
+          <span class="title__callback">Салон интерьера Мебель. Свет. Декор. "Кухни в интерьере"</span>
         </div>
-        Телефон:<span itemprop="telephone">+7(861)2625777</span>,
-        E-mail: <span itemprop="email">salon@arkas-m.ru</span>
+        <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Аркас</span>
+          Контакты:
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            Адрес:
+            <span itemprop="streetAddress">Суворова, 117</span>
+            <span itemprop="postalCode">350000</span>
+            <span itemprop="addressLocality">Краснодар</span>,
+          </div>
+          Телефон:<span itemprop="telephone">+7(861)2625777</span>,
+          E-mail: <span itemprop="email">salon@arkas-m.ru</span>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <ul class="list list_footer">
       <li class="list__item">
-        <a class="list__link" href="#">Кухни</a>
+        <a class="list__link list__link_footer" href="#">Кухни</a>
       </li>
       <li class="list__item">
-        <a class="list__link" href="#">Спальни</a>
+        <a class="list__link list__link_footer" href="#">Спальни</a>
       </li>
       <li class="list__item">
-        <a class="list__link" href="#">Гостиные</a>
+        <a class="list__link list__link_footer" href="#">Гостиные</a>
       </li>
       <li class="list__item">
-        <a class="list__link" href="#">Аксессуары</a>
+        <a class="list__link list__link_footer" href="#">Аксессуары</a>
       </li>
     </ul>
     <section class="user user_footer">
-      <a href="tel:8(918)000-00-00">8(918)000-00-00</a>
-      <section class="social">
-        <ul class="list">
-          <li class="list__item">Youtube</li>
-          <li class="list__item">Instagram</li>
-          <li class="list__item">Facebook</li>
+      <a class="user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
+      <section class="social social_footer">
+        <ul class="list list_footer-social">
+          <li class="list__item list__item_footer-social">
+            <a href="#" class="list__link list__link_footer-social">
+              <svg class="icon icon_social">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+              Instagram</a>
+          </li>
+          <li class="list__item list__item_footer-social">
+            <a href="#" class="list__link list__link_footer-social">
+              <svg class="icon icon_social">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+              Instagram</a>
+          </li>
+          <li class="list__item list__item_footer-social">
+            <a href="#" class="list__link list__link_footer-social">
+              <svg class="icon icon_social">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+              Instagram</a>
+          </li>
         </ul>
       </section>
+    </section>
+    <section class="copyright">
+      <span class="copyright__text">© 2010 — 2020 Салон Мебель. Свет. Декор. «Кухни в интерьере». Копирование контента запрещено и преследуется законом.</span>
     </section>
     <button class="button button_call" type="button">Сделать заказ</button>
   </footer>

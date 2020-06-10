@@ -27,3 +27,15 @@
     text-align: center;
   }
 }
+
+@media (min-width: 1440px) {
+  .form {
+    &_callback {
+      width: 50%;
+    }
+
+    &__input {
+      text-align: left;
+    }
+  }
+}

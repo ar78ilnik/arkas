@@ -39,6 +39,7 @@
 
   &__text {
     text-align: center;
+    vertical-align: top;
     font-family: Ubuntu;
     font-size: 14px;
     line-height: 22px;
@@ -129,6 +130,30 @@
       padding: 0;
     }
 
+    &_categories {
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    &_footer {
+      width: 70%;
+      justify-content: space-between;
+    }
+
+    &_footer-social {
+      width: 53px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      display: block;
+      min-height: 2em;
+      margin-bottom: auto;
+    }
+
     &__link_offer {
       font-size: 16px;
       line-height: 18px;
@@ -149,6 +174,9 @@
 
     &_features {
       height: 166px;
+      width: 70%;
+      margin: 0 auto;
+      flex-grow: 1;
     }
 
     &__item {
@@ -158,6 +186,7 @@
 
       &_features {
         height: 200px;
+        flex-direction: column;
       }
     }
 
@@ -168,6 +197,37 @@
 
     &__link_features {
       height: inherit;
+    }
+
+    &__link {
+      &_categories {
+        width: 100%;
+        justify-content: center;
+      }
+
+      &_footer {
+        font-family: "Georgia Bold";
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &_footer-social {
+        font-size: 0;
+        line-height: 0;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+      }
+    }
+
+    &_footer {
+      display: flex;
     }
   }
 }

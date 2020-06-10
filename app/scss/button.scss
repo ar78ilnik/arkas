@@ -22,7 +22,7 @@
     border: none;
     position: absolute;
     bottom: -23px;
-    left: 93px;
+    left: calc(50% - 68px);
     cursor: pointer;
   }
 
@@ -67,14 +67,18 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .button {}
-}
-
 @media (min-width: 1440px) {
   .button {
+    &_more {
+      cursor: pointer;
+    }
+
     &__nav {
       display: none;
+    }
+
+    &__cards {
+      left: calc(50% - 68px);
     }
 
     &__cards:hover {
@@ -92,6 +96,10 @@
       padding: 21px;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
+      cursor: pointer;
+    }
+
+    &_call {
       cursor: pointer;
     }
   }
