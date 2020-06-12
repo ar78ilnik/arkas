@@ -19,6 +19,7 @@
 
   &__logo {
     order: 1;
+    background-color: #493B38;
   }
 
   &__user {
@@ -28,6 +29,11 @@
   }
 
   &__offer {
+    display: none;
+  }
+
+  &__offer_opened {
+    display: block;
     order: 3;
     flex-basis: 100%;
   }
@@ -36,14 +42,38 @@
 @media (min-width: 834px) {
   .container {
     &__header {
-      width: 95.2%;
-      height: 85px;
-      justify-content: space-between;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__site-nav {
+      display: block;
+      height: 40px;
+      background-color: #ffffff;
+      order: 0;
+    }
+
+    &__user {
+      order: 1;
+      height: 40px;
+      background-color: #ffffff;
+    }
+
+    &__logo {
+      flex-basis: 100%;
     }
 
     &__offer {
       display: block;
-      height: 40px;
+      order: 4;
+      flex-basis: 100%;
+      background-color: #fff;
     }
   }
 }
@@ -51,15 +81,8 @@
 @media (min-width: 1440px) {
   .container {
     &__header {
-      height: 35px;
-    }
-
-    &__site-nav {
-      display: block;
-      order: 0;
       height: inherit;
-      flex-grow: 1;
-      align-content: center;
+      //justify-content: space-around;
     }
 
     &__user {
@@ -77,6 +100,11 @@
       width: 996px;
       display: flex;
       justify-content: space-around;
+    }
+
+    &__offer {
+      order: 3;
+      margin: 0 auto;
     }
   }
 }

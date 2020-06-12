@@ -1,7 +1,4 @@
 .list {
-  &_offer {
-    padding-top: 20px;
-  }
 
   &_categories {
     display: none;
@@ -26,6 +23,20 @@
     &_header-social {
       font-size: 0;
       line-height: 0;
+    }
+
+    &_offer {
+      display: inline-block;
+      width: 100%;
+      font-family: Georgia;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 49px;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
     }
 
     &_features {
@@ -102,29 +113,22 @@
     }
 
     &__link {
-      &_offer {
-        display: block;
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 40px;
-        color: #493b38;
-        text-align: center;
-        text-transform: uppercase;
-        height: 100%;
-      }
 
       &_nav {
         display: flex;
         align-items: center;
         font-family: Georgia;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         color: #493B38;
         text-decoration: none;
         height: 100%;
+      }
+
+      &_offer {
+        font-size: 16px;
+        line-height: 32px;
+        color: #493b38;
       }
 
       &_categories {
@@ -141,8 +145,12 @@
 @media (min-width: 1440px) {
   .list {
     &_nav {
-      flex-basis: 48.61%;
-      margin: 0 18% 0 auto;
+      margin: 0 auto;
+    }
+
+    &_header-social {
+      width: inherit;
+      height: inherit;
     }
 
     &_offer {
@@ -168,7 +176,7 @@
     }
 
     &_footer-social {
-      width: 53px;
+      width: 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -185,17 +193,6 @@
       line-height: 37px;
       color: #493B38;
       position: relative;
-    }
-
-    &__link_offer:hover {
-      content: "";
-      width: 5px;
-      height: 5px;
-      position: absolute;
-      top: 50%;
-      left: -10%;
-      background-color: #FF5252;
-      border-radius: 50%;
     }
 
     &_features {
@@ -231,23 +228,11 @@
         justify-content: center;
       }
 
-      &_footer {
-        font-family: "Georgia Bold";
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 18px;
-        letter-spacing: 1px;
-        color: #ffffff;
-        text-align: center;
-        text-transform: uppercase;
-      }
-
       &_footer-social {
         font-size: 0;
         line-height: 0;
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
         background-color: transparent;
       }
     }

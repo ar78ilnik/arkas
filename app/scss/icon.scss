@@ -3,6 +3,23 @@
   height: 100%;
   fill: #808080;
 
+  &_slider {
+    stroke: white;
+    fill: none;
+  }
+
+  &__slider {
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    &_left {
+      transform: rotate(-180deg);
+    }
+  }
+
   &_categories {
     height: 80%;
     fill: red;
@@ -20,32 +37,17 @@
 
 @media (min-width: 1440px) {
   .icon {
-    fill: none;
+    fill: #808080;
 
-    &_slider {
-      stroke: white;
-    }
-
-    &__slider {
-      width: 45px;
-      height: 45px;
-      border: 1px solid black;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.3);
-
-      &_left {
-        transform: rotate(-180deg);
-      }
+    &_social {
+      stroke: none;
+      height: 15px;
     }
 
     &_features {
       width: 98px;
       height: 98px;
       stroke: white;
-    }
-
-    &_social {
-      fill: #ffffff;
     }
   }
 }

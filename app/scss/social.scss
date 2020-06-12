@@ -1,25 +1,30 @@
 .social {
-    display: none;
+  display: none;
 
-    &__text {
-        font-size: calc((14 / 16) * 100%);
-        font-weight: 300;
-        line-height: calc((26 / 16) * 100%);
-        color: white;
-        padding: 0 20px 20px 20px;
-    }
+  &__text {
+    font-size: calc((14 / 16) * 100%);
+    font-weight: 300;
+    line-height: calc((26 / 16) * 100%);
+    color: white;
+    padding: 0 20px 20px 20px;
+  }
 }
 
 @media (min-width: 834px) {
-    .social {
-        display: flex;
-    }
+  .social {
+    display: flex;
+  }
 }
 
 @media (min-width: 1440px) {
-    .social {
-        &_footer {
-            display: flex;
-        }
+  .social {
+    &_header {
+      display: block;
+      width: 60px;
     }
+
+    &_footer {
+      display: flex;
+    }
+  }
 }
