@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
 
-  &_skidki {
+  &_akcii {
     display: none;
   }
 
@@ -111,10 +111,10 @@
 @media (min-width: 834px) {
   .slider {
     display: block;
-    height: 460px;
+    height: auto;
 
     &_akcii {
-      height: auto;
+      margin-bottom: 50px;
     }
 
     &__container {
@@ -129,24 +129,24 @@
       height: 460px;
 
       &_akcii {
-        height: auto;
+        height: 349px;
       }
     }
 
     &-item:nth-child(1) {
-      background-image: none;
+      background-image: url(../img/akcii-tablet.png);
     }
 
     &-item:nth-child(2) {
-      background-image: none;
+      background-image: url(../img/akcii-tablet.png);
     }
 
     &-item:nth-child(3) {
-      background-image: none;
+      background-image: url(../img/akcii-tablet.png);
     }
 
     &-item:nth-child(4) {
-      background-image: none;
+      background-image: url(../img/akcii-tablet.png);
     }
 
     &-item__title {

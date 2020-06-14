@@ -28,6 +28,27 @@
   }
 }
 
+@media (min-width: 834px) {
+  .form {
+    &_callback {
+      width: 66.9%;
+    }
+
+    &_o-kompanii {
+      width: 66.9%;
+      margin-bottom: 25px;
+    }
+
+    &__fieldset {
+      width: 100%;
+    }
+
+    &__input {
+      text-align: left;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .form {
     width: 60%;

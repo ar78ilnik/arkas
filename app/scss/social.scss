@@ -12,7 +12,11 @@
 
 @media (min-width: 834px) {
   .social {
-    display: flex;
+    &_footer {
+      display: flex;
+      justify-content: space-around;
+      width: 70px;
+    }
   }
 }
 

@@ -22,9 +22,35 @@
   }
 }
 
+@media (min-width: 834px) {
+  .map {
+    width: 100%;
+
+    &_o-kompanii {
+      margin: 0 auto 70px;
+    }
+
+    &__item {
+      width: 672px;
+      height: 275px;
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__adress {
+      flex-basis: 47.61%;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .map {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-around;
@@ -33,10 +59,13 @@
     &__item {
       width: 500px;
       height: 275px;
+      margin: 0;
     }
 
     &__info {
       width: 320px;
+      min-height: 275px;
+      flex-direction: column;
     }
   }
 }

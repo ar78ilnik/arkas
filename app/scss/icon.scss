@@ -35,6 +35,14 @@
   }
 }
 
+@media (min-width: 834px) {
+  .icon {
+    &_footer {
+      fill: #fff;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .icon {
     fill: #808080;

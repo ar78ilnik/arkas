@@ -69,7 +69,8 @@ function watch() {
   gulp.watch('app/pages/**/*.html', html)
   gulp.watch('app/scss/*.scss', style);
   gulp.watch('app/js/**/*.js', copy);
-  gulp.watch('app/fonts/*.{woff, woff2}');
+  gulp.watch('app/fonts/*.{woff, woff2}', copy);
+  gulp.watch('app/img/**/*.*', copy);
 };
 
 function server() {
@@ -79,6 +80,7 @@ function server() {
   bs.watch('app/pages/**/*.html').on('change', bs.reload);
   bs.watch('app/scss/*.scss').on('change', bs.reload);
   bs.watch('app/js/**/*.js').on('change', bs.reload);
+  bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
 const build = gulp.series(clean, copy, style, html, gulp.parallel(watch, server));

@@ -136,6 +136,32 @@
       margin-bottom: 94px;
     }
 
+    &__text_akcii {
+      flex-direction: column;
+      top: 18%;
+      left: 22%;
+      justify-content: flex-start;
+    }
+
+    &__price_akcii {
+      display: block;
+      width: 230px;
+      font-family: Georgia;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      text-transform: uppercase;
+
+      &-two {
+        font-family: Ubuntu;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+    }
+
     &__link_slider {
       display: block;
       height: auto;

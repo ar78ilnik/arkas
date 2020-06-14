@@ -27,7 +27,9 @@
   }
 
   &__cards_akcii {
-    bottom: 5%;
+    bottom: 22%;
+    left: 24%;
+    padding: 6px 57px;
   }
 
   &_more {
@@ -62,12 +64,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    padding: 6px 60px;
+    padding: 6px 80px;
     color: #ffffff;
     border: none;
     border-radius: 49px;
     background-color: #FF5252;
-    margin: 40px auto;
+    order: 0;
+    margin-bottom: 20px;
   }
 }
 
