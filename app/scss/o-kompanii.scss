@@ -16,6 +16,10 @@
     color: #000000;
     text-align: center;
   }
+
+  &__img {
+    display: none;
+  }
 }
 
 @media (min-width: 834px) {
@@ -32,10 +36,6 @@
       margin-bottom: 62px;
     }
 
-    &__img {
-      margin-bottom: 74px;
-    }
-
     &__promo-text {
       display: inline;
       font-family: Ubuntu;
@@ -48,6 +48,36 @@
       background-color: #493b38;
       box-decoration-break: clone;
       padding: 5px 10px;
+      position: relative;
+    }
+
+    &__promo-text:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      display: block;
+      width: 33px;
+      height: 21px;
+      background-image: url(../img/Kavyichki.png);
+    }
+
+    &__promo-text:after {
+      content: "";
+      position: absolute;
+      bottom: -80px;
+      right: -60px;
+      display: block;
+      width: 33px;
+      height: 21px;
+      background-image: url(../img/Kavyichki.png);
+      transform: rotate(180deg);
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      margin-bottom: 74px;
     }
   }
 }
@@ -56,6 +86,12 @@
   .o-kompanii {
     &__container {
       margin-left: 42%;
+    }
+
+    &__promo-text {
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 1.3px;
     }
 
     &__text {
