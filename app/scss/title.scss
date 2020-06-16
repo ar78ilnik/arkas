@@ -1,137 +1,139 @@
 .title {
-  &__h1 {
-    font-size: calc((16/16)*100%);
-    margin-top: 34px;
-    margin-bottom: -10px;
-  }
-
-  &__h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin-bottom: 29px;
-
-    &_o-kompanii {
-      margin-bottom: 82px;
+    &__h1 {
+        font-size: calc((16/16)*100%);
+        margin-top: 34px;
+        margin-bottom: -10px;
     }
-  }
 
-  &__h2_hiden {
-    display: none;
-  }
+    &__h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 29px;
 
-  &__h2_akcii {
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    z-index: 3;
-  }
-
-  &__text {
-    font-family: Georgia;
-    font-size: 24px;
-    line-height: 45px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__text_akcii {
-    font-size: 48px;
-    line-height: 49px;
-    letter-spacing: 1.5px;
-    color: #ffffff;
-  }
-
-  &__callback {
-    font-family: Georgia;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 49px;
-    letter-spacing: .7px;
-    text-align: center;
-
-    &_two {
-      display: block;
-      width: 190px;
-      font-family: Ubuntu;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
+        &_o-kompanii {
+            margin-bottom: 82px;
+        }
     }
-  }
+
+    &__h2_hiden {
+        display: none;
+    }
+
+    &__h2_akcii {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        z-index: 3;
+    }
+
+    &__text {
+        font-family: Georgia;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text_akcii {
+        font-size: 48px;
+        line-height: 49px;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+    }
+
+    &__callback {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 49px;
+        letter-spacing: .7px;
+        text-align: center;
+
+        &_two {
+            display: block;
+            width: 190px;
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
 }
 
 @media (min-width: 834px) {
-  .title {
-    &__h1 {
-      margin: 0;
+    .title {
+        &__h1 {
+            margin: 0;
+        }
+
+        &__h2 {
+            &_skidki {
+                margin-bottom: 63px;
+            }
+
+            &_o-kompanii {
+                margin-bottom: 62px;
+            }
+        }
+
+        &__callback {
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1px;
+            text-align: left;
+
+            &_two {
+                width: 380px;
+            }
+
+            &_o-kompanii {
+                font-size: 22px;
+                line-height: 49px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        &__h2_map {
+            flex-basis: 29.76%;
+            margin-bottom: 0;
+        }
     }
-
-    &__h2 {
-      &_skidki {
-        margin-bottom: 63px;
-      }
-
-      &_o-kompanii {
-        margin-bottom: 62px;
-      }
-    }
-
-    &__callback {
-      font-size: 16px;
-      line-height: 27px;
-      letter-spacing: 1px;
-      text-align: left;
-
-      &_two {
-        width: 380px;
-      }
-
-      &_o-kompanii {
-        font-size: 22px;
-        line-height: 49px;
-        letter-spacing: 1.5px;
-      }
-    }
-
-    &__h2_map {
-      flex-basis: 29.76%;
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (min-width: 1440px) {
-  .title {
-    &__h2 {
-      &_features {
-        margin-top: 52px;
-        margin-bottom: 45px;
-        height: 75px;
-      }
+    .title {
+        &__h2 {
+            margin-bottom: 70px;
 
-      &_callback {
-        width: 50%;
-      }
+            &_features {
+                margin-top: 52px;
+                margin-bottom: 45px;
+                height: 75px;
+            }
 
-      &_o-kompanii {
-        padding-top: 80px;
-        margin-bottom: 45px;
-      }
+            &_callback {
+                width: 50%;
+            }
+
+            &_o-kompanii {
+                padding-top: 80px;
+                margin-bottom: 45px;
+            }
+        }
+
+        &__callback {
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1px;
+            text-align: left;
+        }
+
+        &__callback_two {
+            width: auto;
+        }
     }
-
-    &__callback {
-      font-size: 16px;
-      line-height: 27px;
-      letter-spacing: 1px;
-      text-align: left;
-    }
-
-    &__callback_two {
-      width: auto;
-    }
-  }
 }

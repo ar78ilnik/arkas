@@ -1,270 +1,281 @@
 .list {
 
-  &_categories {
-    display: none;
-  }
-
-  &_features {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  &_header-social {
-    width: 53px;
-    height: 12px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  &__link {
-    &_header-social {
-      font-size: 0;
-      line-height: 0;
-    }
-
-    &_offer {
-      display: inline-block;
-      width: 100%;
-      font-family: Georgia;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 49px;
-      letter-spacing: 1.5px;
-      color: #ffffff;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    &_features {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  &__text {
-    text-align: center;
-    vertical-align: top;
-    font-family: Ubuntu;
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-  }
-
-  &__item {
-    &_features {
-      flex-basis: 50%;
-      margin-bottom: 40px;
-    }
-  }
-
-  &_footer {
-    display: none;
-  }
-}
-
-@media (min-width: 834px) {
-  .list {
-    &_features {
-      height: inherit;
-      justify-content: space-around;
-    }
-
-    &_offer {
-      padding: 0;
-      display: flex;
-      height: inherit;
-    }
-
     &_categories {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      height: 150px;
-      margin-bottom: 24px;
+        display: none;
     }
 
-    &_nav {
-      width: 634px;
-      height: inherit;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+    &_features {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    &_footer {
-      width: 70%;
-      display: flex;
-      justify-content: space-around;
-    }
-
-    &_footer-social {
-      width: 100%;
-      height: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__item {
-      height: inherit;
-      flex-grow: 1;
-
-      &_features {
-        flex-basis: 25%;
-      }
-
-      &_categories {
-        flex: 0 0 200px;
-      }
+    &_header-social {
+        width: 53px;
+        height: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     &__link {
+        &_header-social {
+            font-size: 0;
+            line-height: 0;
+        }
 
-      &_nav {
-        display: flex;
-        align-items: center;
-        font-family: Georgia;
-        font-size: 14px;
-        line-height: 18px;
-        color: #493B38;
-        text-decoration: none;
-        height: 100%;
-      }
+        &_offer {
+            display: inline-block;
+            width: 100%;
+            font-family: Georgia;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 49px;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+        }
 
-      &_offer {
-        font-size: 16px;
-        line-height: 32px;
-        color: #493b38;
-      }
-
-      &_categories {
-        display: flex;
-        align-items: center;
-        font-size: 0;
-        line-height: 0;
-        height: 100%;
-      }
-
-      &_footer {
-        display: block;
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        color: #ffffff;
-        text-decoration: none;
-        text-align: center;
-      }
-
-      &_footer-social {
-        font-size: 0;
-        line-height: 0;
-      }
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .list {
-    &_nav {
-      margin: 0 auto;
-    }
-
-    &_header-social {
-      width: inherit;
-      height: inherit;
-    }
-
-    &_offer {
-      width: 683px;
-      height: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      padding: 0;
-    }
-
-    &_categories {
-      width: 80%;
-      margin: 0 auto;
-      justify-content: space-between;
-    }
-
-    &_footer {
-      display: block;
-    }
-
-    &_footer-social {
-      width: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        &_features {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__text {
-      display: block;
-      min-height: 2em;
-      margin-bottom: auto;
-    }
-
-    &__link_offer {
-      font-size: 16px;
-      line-height: 37px;
-      color: #493B38;
-      position: relative;
-    }
-
-    &_features {
-      height: 166px;
-      width: 70%;
-      margin: 0 auto;
-      flex-grow: 1;
+        text-align: center;
+        vertical-align: top;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
     }
 
     &__item {
-      display: flex;
-      align-items: center;
-      flex-grow: 0;
-
-      &_features {
-        height: 200px;
-        flex-direction: column;
-      }
+        &_features {
+            flex-basis: 50%;
+            margin-bottom: 40px;
+        }
     }
 
-    &__link {
-      &_categories {
-        width: 100%;
-        justify-content: center;
-      }
-
-      &_features {
-        height: inherit;
-      }
-
-      &_nav {
-        font-family: Ubuntu;
-        font-weight: normal;
-      }
-
-      &_footer-social {
-        font-size: 0;
-        line-height: 0;
-        width: 15px;
-        height: 15px;
-        background-color: transparent;
-      }
+    &_footer {
+        display: none;
     }
-  }
+}
+
+@media (min-width: 834px) {
+    .list {
+        &_features {
+            height: inherit;
+            justify-content: space-around;
+        }
+
+        &_offer {
+            padding: 0;
+            display: flex;
+            height: inherit;
+        }
+
+        &_categories {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            height: 150px;
+            margin-bottom: 24px;
+        }
+
+        &_nav {
+            width: 634px;
+            height: inherit;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &_footer {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &_footer-social {
+            width: 100%;
+            height: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__item {
+            height: inherit;
+            flex-grow: 1;
+
+            &_features {
+                flex-basis: 25%;
+            }
+
+            &_categories {
+                flex: 0 0 200px;
+            }
+        }
+
+        &__link {
+
+            &_nav {
+                display: flex;
+                align-items: center;
+                font-family: Georgia;
+                font-size: 14px;
+                line-height: 18px;
+                color: #493B38;
+                text-decoration: none;
+                height: 100%;
+            }
+
+            &_offer {
+                font-size: 16px;
+                line-height: 32px;
+                color: #493b38;
+            }
+
+            &_categories {
+                display: flex;
+                align-items: center;
+                font-size: 0;
+                line-height: 0;
+                height: 100%;
+            }
+
+            &_footer {
+                display: block;
+                font-family: Georgia;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ffffff;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            &_footer-social {
+                font-size: 0;
+                line-height: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .list {
+        &_nav {
+            margin: 0 auto;
+        }
+
+        &_header-social {
+            width: inherit;
+            height: inherit;
+        }
+
+        &_offer {
+            width: 683px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        &_categories {
+            width: 80%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        &_footer {
+            display: block;
+        }
+
+        &_footer-social {
+            width: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__text {
+            display: block;
+            min-height: 2em;
+            margin-bottom: auto;
+        }
+
+        &__link_offer {
+            font-size: 16px;
+            line-height: 37px;
+            color: #493B38;
+            position: relative;
+        }
+
+        &_features {
+            height: 166px;
+            width: 70%;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+
+        &_footer {
+            display: flex;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+
+            &_features {
+                height: 200px;
+                flex-direction: column;
+            }
+
+            &_footer {
+                flex-grow: 1;
+            }
+        }
+
+        &__link {
+            &_categories {
+                width: 100%;
+                justify-content: center;
+            }
+
+            &_features {
+                height: inherit;
+            }
+
+            &_nav {
+                font-family: Ubuntu;
+                font-weight: normal;
+            }
+
+            &_footer {
+                width: 100%;
+            }
+
+            &_footer-social {
+                font-size: 0;
+                line-height: 0;
+                width: 15px;
+                height: 15px;
+                background-color: transparent;
+            }
+        }
+    }
 }

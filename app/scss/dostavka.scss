@@ -1,0 +1,49 @@
+.dostavka {
+
+    &__container {
+        width: 322px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 834px) {
+    .dostavka {
+        &__container {
+            width: 670px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .dostavka {
+        &__container {
+            width: 1028px;
+
+            &_double {
+                height: inherit;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &-text {
+                width: 60%;
+            }
+        }
+    }
+}
