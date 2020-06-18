@@ -1,101 +1,116 @@
 .o-kompanii {
-  margin-bottom: 43px;
-
-  &__promo-text {
-    display: none;
-  }
-
-  &__text {
-    width: 77%;
-    margin: 0 auto;
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    text-align: center;
-  }
-
-  &__img {
-    display: none;
-  }
-}
-
-@media (min-width: 834px) {
-  .o-kompanii {
-    margin-bottom: 175px;
-
-    &__container {
-      width: 550px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    &__promo {
-      margin-bottom: 62px;
-    }
+    margin-bottom: 43px;
 
     &__promo-text {
-      display: inline;
-      font-family: Ubuntu;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 27px;
-      letter-spacing: 1px;
-      color: #ffffff;
-      background-color: #493b38;
-      box-decoration-break: clone;
-      padding: 5px 10px;
-      position: relative;
-    }
-
-    &__promo-text:before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      left: -40px;
-      display: block;
-      width: 33px;
-      height: 21px;
-      background-image: url(../img/Kavyichki.png);
-    }
-
-    &__promo-text:after {
-      content: "";
-      position: absolute;
-      bottom: -80px;
-      right: -60px;
-      display: block;
-      width: 33px;
-      height: 21px;
-      background-image: url(../img/Kavyichki.png);
-      transform: rotate(180deg);
-    }
-
-    &__img {
-      display: block;
-      width: 100%;
-      margin-bottom: 74px;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .o-kompanii {
-    &__container {
-      margin-left: 42%;
-    }
-
-    &__promo-text {
-      font-size: 22px;
-      line-height: 33px;
-      letter-spacing: 1.3px;
+        display: none;
     }
 
     &__text {
-      width: 71%;
+        width: 77%;
+        margin: 0 auto;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        text-align: center;
     }
-  }
+
+    &__img {
+        display: none;
+    }
+}
+
+@media (min-width: 834px) {
+    .o-kompanii {
+        margin-bottom: 175px;
+
+        &__container {
+            width: 550px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__promo {
+            margin-bottom: 62px;
+        }
+
+        &__promo-text {
+            display: inline;
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            background-color: #493b38;
+            box-decoration-break: clone;
+            padding: 5px 10px;
+            position: relative;
+        }
+
+        &__promo-text:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: -40px;
+            display: block;
+            width: 33px;
+            height: 21px;
+            background-image: url(../img/Kavyichki.png);
+        }
+
+        &__promo-text:after {
+            content: "";
+            position: absolute;
+            bottom: -80px;
+            right: -60px;
+            display: block;
+            width: 33px;
+            height: 21px;
+            background-image: url(../img/Kavyichki.png);
+            transform: rotate(180deg);
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            margin-bottom: 74px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .o-kompanii {
+        &__container {
+            margin-left: 42%;
+        }
+
+        &__promo-text {
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 1.3px;
+        }
+
+        &__promo-text:before {
+            top: 0;
+            left: -60px;
+        }
+
+        &__promo-text:after {
+            bottom: -100px;
+            right: -60px;
+        }
+
+        &__img {
+            width: 70%;
+            margin: 0 auto 45px;
+        }
+
+        &__text {
+            width: 71%;
+        }
+    }
 }
