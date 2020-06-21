@@ -206,7 +206,7 @@
         }
 
         &_footer-social {
-            width: 60px;
+            height: inherit;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -251,6 +251,10 @@
         }
 
         &__link {
+            &_header-social {
+                height: inherit;
+            }
+
             &_categories {
                 width: 100%;
                 justify-content: center;
@@ -272,8 +276,7 @@
             &_footer-social {
                 font-size: 0;
                 line-height: 0;
-                width: 15px;
-                height: 15px;
+                width: 100%;
                 background-color: transparent;
             }
         }

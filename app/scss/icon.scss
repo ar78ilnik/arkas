@@ -45,11 +45,10 @@
 
 @media (min-width: 1440px) {
     .icon {
-        fill: none;
 
         &_social {
             stroke: none;
-            height: 15px;
+            height: inherit;
         }
 
         &_features {
