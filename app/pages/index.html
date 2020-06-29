@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Аркас</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <base href="dist">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -23,7 +24,7 @@
                         <a class="list__link list__link_nav" href="works.html">Наши работы</a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_nav" href="#">Блог новости</a>
+                        <a class="list__link list__link_nav" href="novosti.html">Блог новости</a>
                     </li>
                     <li class="list__item">
                         <a class="list__link list__link_nav" href="#">Контакты</a>
@@ -87,7 +88,7 @@
                         <a class="list__link list__link_offer" href="catalog/stoli-y-stulia/stoli-y-stulia.html">Столы и стулья</a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_offer" href="skidki.html">Распродажа</a>
+                        <a class="list__link list__link_offer" href="catalog/skidki/skidki.html">Распродажа</a>
                     </li>
                 </ul>
             </div>
@@ -226,6 +227,26 @@
                     </a>
                     <button class="button button__cards" type="button">Заказать</button>
                 </div>
+                <div class="cards__item cards__item_relative">
+                    <a href="cartochka.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
+                <div class="cards__item cards__item_relative">
+                    <a href="cartochka.html" class="cards__link">
+                        <img src="img/catalog-unit1-mobile.jpg" alt="" class="cards__img" width="768" height="300">
+                        <div class="cards__text">
+                            <span class="cards__price">Гостиная Dama</span>
+                            <span class="cards__price">4 300 р</span>
+                        </div>
+                    </a>
+                    <button class="button button__cards" type="button">Заказать</button>
+                </div>
             </div>
         </section>
         <section class="features container">
@@ -268,30 +289,38 @@
                 </li>
             </ul>
         </section>
+
         <section class="works">
             <div class="title__h2">
                 <span class="title__text">Наши работы</span>
                 <div class="circle"></div>
             </div>
             <div class="works__items">
-                <div class="works__item">
-                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="auto">
-                    <span class="works__news">Проект</span>
-                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                </div>
-                <div class="works__item">
-                    <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
-                    <span class="works__news">Проект</span>
-                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                </div>
-                <div class="works__item">
-                    <img src="img/2.jpg" alt="" class="press__img" width="100%" height="auto">
-                    <span class="works__news">Проект</span>
-                    <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
-                </div>
+                <a class="works__item" href="cartochka-raboti.html">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="300px">
+                    <div class="works__news-container">
+                        <span class="works__news">Проект</span>
+                        <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    </div>
+                </a>
+                <a class="works__item" href="cartochka-raboti.html">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="300px">
+                    <div class="works__news-container">
+                        <span class="works__news">Проект</span>
+                        <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    </div>
+                </a>
+                <a class="works__item" href="cartochka-raboti.html">
+                    <img src="img/4.jpg" alt="" class="press__img" width="100%" height="300px">
+                    <div class="works__news-container">
+                        <span class="works__news">Проект</span>
+                        <p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                    </div>
+                </a>
             </div>
             <button class="button button_more" type="button">Увидеть больше</button>
         </section>
+
         <section class="news">
             <div class="container container__news">
                 <p class="news__text">

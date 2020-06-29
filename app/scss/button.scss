@@ -1,115 +1,115 @@
 .button {
-  &__nav {
-    font-size: 0;
-    line-height: 0;
-    border: none;
-    width: 80px;
-    height: 40px;
-    background-color: transparent;
-  }
-
-  &__cards {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #ffffff;
-    display: block;
-    padding: 6px 35px;
-    background-color: #ff5252;
-    border-radius: 49px;
-    border: none;
-    position: absolute;
-    bottom: -23px;
-    left: calc(50% - 68px);
-    cursor: pointer;
-  }
-
-  &__cards_akcii {
-    bottom: 22%;
-    left: 24%;
-    padding: 6px 57px;
-  }
-
-  &_more {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #ffffff;
-    background-color: #493b38;
-    border-radius: 49px;
-    border: none;
-    padding: 6px 35px;
-  }
-
-  &_send {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #ffffff;
-    background-color: #493b38;
-    border-radius: 49px;
-    border: none;
-    padding: 6px 60px;
-  }
-
-  &_call {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    padding: 6px 80px;
-    color: #ffffff;
-    border: none;
-    border-radius: 49px;
-    background-color: #FF5252;
-    order: 0;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .button {
-    &_more {
-      cursor: pointer;
-    }
-
     &__nav {
-      display: none;
+        font-size: 0;
+        line-height: 0;
+        border: none;
+        width: 80px;
+        height: 40px;
+        background-color: transparent;
     }
 
     &__cards {
-      left: calc(50% - 68px);
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+        display: block;
+        padding: 6px 35px;
+        background-color: #ff5252;
+        border-radius: 49px;
+        border: none;
+        position: absolute;
+        bottom: -23px;
+        left: calc(50% - 68px);
+        cursor: pointer;
     }
 
-    &__cards:hover {
-      background-color: #ff5252;
-      color: white;
-      transition: .5s;
+    &__cards_akcii {
+        bottom: 10%;
+        left: 24%;
+        padding: 6px 57px;
     }
 
-    &_news {
-      background-color: #ff5252;
-      border: none;
-      font-size: inherit;
-      position: absolute;
-      color: #fff;
-      padding: 21px;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      cursor: pointer;
+    &_more {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+        background-color: #493b38;
+        border-radius: 49px;
+        border: none;
+        padding: 6px 35px;
+    }
+
+    &_send {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #ffffff;
+        background-color: #493b38;
+        border-radius: 49px;
+        border: none;
+        padding: 6px 60px;
     }
 
     &_call {
-      cursor: pointer;
-      flex-basis: 20%;
-      order: 1;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        padding: 6px 80px;
+        color: #ffffff;
+        border: none;
+        border-radius: 49px;
+        background-color: #FF5252;
+        order: 0;
+        margin-bottom: 20px;
     }
-  }
+}
+
+@media (min-width: 1440px) {
+    .button {
+        &_more {
+            cursor: pointer;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__cards {
+            left: calc(50% - 68px);
+        }
+
+        &__cards:hover {
+            background-color: #ff5252;
+            color: white;
+            transition: .5s;
+        }
+
+        &_news {
+            background-color: #ff5252;
+            border: none;
+            font-size: inherit;
+            position: absolute;
+            color: #fff;
+            padding: 21px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+        }
+
+        &_call {
+            cursor: pointer;
+            flex-basis: 20%;
+            order: 1;
+        }
+    }
 }

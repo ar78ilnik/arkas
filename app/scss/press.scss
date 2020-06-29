@@ -1,71 +1,71 @@
 .press {
-  display: none;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3em;
-
-  &__items {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  &__item {
-    flex: 0 0 230px;
-    margin-left: 1em;
-    margin-bottom: 2em;
-  }
-
-  &__item_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__link {
-    background-blend-mode: multiply;
-    display: block;
-    height: 140px;
-    background-color: rgba(72, 72, 72, 0.8);
-    background-image: url(../img/4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-decoration: none;
-    color: white;
-  }
-
-  &__content {
-    padding: 10px 5px;
-    color: white;
-  }
-
-  &__text {
-    font-size: calc((14/16)*100%);
-    line-height: calc((23/16)*100%);
-  }
-
-  &__news {
-    font-size: calc((13/16)*100%);
-  }
-
-  &__date {
-    font-size: calc((13/16)*100%);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .press {
-    width: 80%;
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3em;
 
     &__items {
-      justify-content: space-around;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    &__item {
+        flex: 0 0 230px;
+        margin-left: 1em;
+        margin-bottom: 2em;
+    }
+
+    &__item_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__link {
-      color: #424242;
-      text-decoration: none;
+        background-blend-mode: multiply;
+        display: block;
+        height: 140px;
+        background-color: rgba(72, 72, 72, 0.8);
+        background-image: url(../img/4.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-decoration: none;
+        color: white;
     }
-  }
+
+    &__content {
+        padding: 10px 5px;
+        color: white;
+    }
+
+    &__text {
+        font-size: calc((14/16)*100%);
+        line-height: calc((23/16)*100%);
+    }
+
+    &__news {
+        font-size: calc((13/16)*100%);
+    }
+
+    &__date {
+        font-size: calc((13/16)*100%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .press {
+        width: 80%;
+
+        &__items {
+            justify-content: space-around;
+        }
+
+        &__link {
+            color: #424242;
+            text-decoration: none;
+        }
+    }
 }
