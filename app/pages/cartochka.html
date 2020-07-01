@@ -24,7 +24,7 @@
                         <a class="list__link list__link_nav" href="works.html">Наши работы</a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_nav" href="#">Блог новости</a>
+                        <a class="list__link list__link_nav" href="novosti.html">Блог новости</a>
                     </li>
                     <li class="list__item">
                         <a class="list__link list__link_nav" href="#">Контакты</a>
@@ -111,19 +111,34 @@
                     </div>
                 </div>
                 <span class="catalog-unit__price">от 100 000 руб.</span>
-                <button class="button button__cards" type="button">Заказать</button>
+
                 <div class="tabs">
                     <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
                     <label class="tabs__label" for="tab-btn-1">Описание</label>
                     <input class="tabs__input" type="radio" name="tab-btn" id="tab-btn-2" value="">
                     <label class="tabs__label" for="tab-btn-2">Характеристики</label>
                     <div class="tabs__content" id="content-1">
-                        <p class="tabs__paragraph">Обеденный стол, основание шпон ореха установленном на металлической пластине, столешница закаленное стекло (толщиной 12 мм)
-                        </p>
+                        <p class="tabs__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat molestie lorem elementum scelerisque pretium in faucibus nunc amet. Pellentesque sit vel proin imperdiet cum venenatis consectetur turpis. Urna tortor sodales nunc vel duis enim sit. Nulla porttitor augue dictum nulla pretium, facilisis odio. In tristique faucibus venenatis semper etiam nulla sed pellentesque ac. Ultricies vel volutpat vestibulum semper vel eget. Laoreet sit sed augue maecenas. Imperdiet vestibulum pellentesque habitant massa accumsan, varius non. Sit in et bibendum consectetur massa.</p>
                     </div>
                     <div class="tabs__content" id="content-2">
-                        Содержимое 2...
+                        Обеденный стол, основание шпон ореха установленном на металлической пластине, столешница закаленное стекло (толщиной 12 мм)
                     </div>
+                </div>
+            </div>
+            <div class="catalog-unit__features">
+                <div class="catalog-unit__item">
+                    <img class="catalog-unit__features-img" src="../img/catalog-features1.png" alt="" width="40" height="30">
+                    <p class="catalog-unit__text-box">
+                        <span class="catalog-unit__text">Доставка по Краснодару - бесплатно</span>
+                        <span class="catalog-unit__text">1Доставка по России - от 3 дней</span>
+                    </p>
+                </div>
+                <div class="catalog-unit__item">
+                    <img class="catalog-unit__features-img" src="../img/catalog-features2.png" alt="" width="46" height="33">
+                    <p class="catalog-unit__text-box">
+                        <span class="catalog-unit__text">Гарантия - 2 года</span>
+                        <span class="catalog-unit__text">Возврат - в течение 14 дней</span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -159,40 +174,50 @@
     <footer class="footer">
         <ul class="list list_footer">
             <li class="list__item">
-                <a class="list__link list__link_footer" href="../kuchni/kuhni.html">Кухни</a>
+                <a class="list__link list__link_footer" href="catalog/kuchni/kuhni.html">Кухни</a>
             </li>
             <li class="list__item">
-                <a class="list__link list__link_footer" href="../spalni/spalni.html">Спальни</a>
+                <a class="list__link list__link_footer" href="catalog/spalni/spalni.html">Спальни</a>
             </li>
             <li class="list__item">
-                <a class="list__link list__link_footer" href="../stoli-y-stulia/stoli-y-stulia.html">Гостиные</a>
+                <a class="list__link list__link_footer" href="catalog/stoli-y-stulia/stoli-y-stulia.html">Столы и стулья</a>
             </li>
             <li class="list__item">
-                <a class="list__link list__link_footer">Распродажа</a>
+                <a class="list__link list__link_footer" href="catalog/skidki/skidki.html">Распродажа</a>
             </li>
         </ul>
         <div class="footer__info">
             <section class="user user_footer">
-                <a class="user__link user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
+                <div class="user__adress">
+                    <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            Адрес:
+                            <span itemprop="streetAddress">Суворова, 117</span>
+                            <span itemprop="postalCode">350000</span>
+                            <span itemprop="addressLocality">Краснодар</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
                 <section class="social social_footer">
                     <ul class="list list_footer-social">
                         <li class="list__item list__item_footer-social">
-                            <a href="#" class="list__link list__link_header-social">
-                                <svg class="icon icon_footer">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
                                     <use xlink:href="img/sprite.svg#youtube"></use>
                                 </svg>
                                 Instagram</a>
                         </li>
                         <li class="list__item list__item_footer-social">
-                            <a href="#" class="list__link list__link_header-social">
-                                <svg class="icon icon_footer">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
                                     <use xlink:href="img/sprite.svg#instagram"></use>
                                 </svg>
                                 Instagram</a>
                         </li>
                         <li class="list__item list__item_footer-social">
-                            <a href="#" class="list__link list__link_header-social">
-                                <svg class="icon icon_footer">
+                            <a href="#" class="list__link list__link_footer-social">
+                                <svg class="icon icon_social">
                                     <use xlink:href="img/sprite.svg#facebook"></use>
                                 </svg>
                                 Instagram</a>

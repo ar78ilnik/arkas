@@ -10,11 +10,13 @@
     }
 
     &__item {
+        display: block;
         width: 100%;
         margin-bottom: 70px;
         background-color: #fff;
         position: relative;
         height: auto;
+        text-decoration: none;
     }
 
     &__news {
@@ -54,6 +56,7 @@
         padding-left: 1em;
         padding-right: 1em;
         margin-bottom: 10px;
+        color: #a1887f;
     }
 }
 

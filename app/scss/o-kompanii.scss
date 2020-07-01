@@ -38,6 +38,10 @@
     &__img {
         max-width: 90%;
         margin-bottom: 34px;
+
+        &-partners {
+            margin-bottom: 0;
+        }
     }
 
     &__works {
@@ -53,7 +57,11 @@
 
 @media (min-width: 834px) {
     .o-kompanii {
+        width: 90%;
+        margin: 0 auto;
         margin-bottom: 175px;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         &__container {
             width: 550px;
@@ -63,6 +71,11 @@
 
         &__promo {
             margin-bottom: 62px;
+            flex-basis: 100%;
+        }
+
+        &__text:nth-of-type(1) {
+            flex-basis: 50%;
         }
 
         &__promo-text {
@@ -104,28 +117,77 @@
         }
 
         &__img {
-            display: block;
-            width: 100%;
+            max-width: 30%;
             margin-bottom: 74px;
 
             &_first {
-                width: 30%;
+                width: 40%;
                 float: right;
             }
+
+            &_about {
+                max-width: 100%;
+                height: 100%;
+                margin-bottom: 0;
+            }
+
+            &-partners {
+                margin-bottom: 0;
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        &__partners {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logo {
+            flex-basis: 30%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__works-box {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
         }
     }
 }
 
 @media (min-width: 1440px) {
     .o-kompanii {
+        display: block;
+
         &__container {
-            margin-left: 42%;
+            width: 50%;
+        }
+
+        &__promo {
+            order: 0;
         }
 
         &__promo-text {
             font-size: 22px;
             line-height: 33px;
             letter-spacing: 1.3px;
+
+            &_first {
+                width: 100%;
+                order: 1;
+            }
         }
 
         &__promo-text:before {
@@ -138,13 +200,37 @@
             right: -60px;
         }
 
+        &__partners {
+            width: 100%;
+        }
+
         &__img {
+            width: 100%;
+            margin: 0;
+
+            &_first {
+                max-width: 50%;
+                margin-bottom: 0;
+            }
+
+            &_about {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+
+        &__logo {
+            height: 150px;
+        }
+
+        &__text:nth-of-type(1) {
             width: 70%;
-            margin: 0 auto 45px;
+            margin-bottom: 34px;
         }
 
         &__text {
-            width: 71%;
+            width: 40%;
+            margin: 0;
         }
     }
 }
