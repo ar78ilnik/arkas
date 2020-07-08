@@ -1,6 +1,12 @@
 .social {
     display: none;
 
+    &_contacts {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+    }
+
     &__text {
         font-size: calc((14 / 16) * 100%);
         font-weight: 300;
@@ -24,13 +30,14 @@
     .social {
         &_header {
             display: block;
-            width: 60px;
-            height: inherit;
+            width: 120px;
+            height: 40px;
         }
 
         &_footer {
             display: flex;
-            height: 20px;
+            width: 120px;
+            height: 40px;
         }
     }
 }

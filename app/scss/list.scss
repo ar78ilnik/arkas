@@ -13,10 +13,15 @@
 
     &_header-social {
         width: 53px;
-        height: 12px;
+        height: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    &_contacts {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__link {
@@ -46,6 +51,11 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        &_contacts {
+            font-size: 0;
+            line-height: 0;
+        }
     }
 
     &__text {
@@ -61,6 +71,10 @@
         &_features {
             flex-basis: 50%;
             margin-bottom: 40px;
+        }
+
+        &_contacts {
+            flex-basis: 30px;
         }
     }
 
@@ -184,7 +198,7 @@
 
         &_header-social {
             width: inherit;
-            height: inherit;
+            height: 40px;
         }
 
         &_offer {
@@ -278,7 +292,8 @@
             &_footer-social {
                 font-size: 0;
                 line-height: 0;
-                width: 100%;
+                width: 80%;
+                height: 40px;
                 background-color: transparent;
             }
         }

@@ -8,6 +8,15 @@
         fill: none;
     }
 
+    &_categories {
+        height: 80%;
+        fill: red;
+    }
+
+    &_contacts {
+        height: 30px;
+    }
+
     &__slider {
         width: 45px;
         height: 45px;
@@ -18,11 +27,6 @@
         &_left {
             transform: rotate(-180deg);
         }
-    }
-
-    &_categories {
-        height: 80%;
-        fill: red;
     }
 
     &_features {
@@ -48,7 +52,8 @@
 
         &_social {
             stroke: none;
-            height: inherit;
+            height: 40px;
+            width: 30px;
         }
 
         &_features {

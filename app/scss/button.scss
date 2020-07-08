@@ -6,6 +6,7 @@
         width: 80px;
         height: 40px;
         background-color: transparent;
+        background: linear-gradient(to bottom, #fff 0%, #fff 10%, transparent 10%, transparent 45%, #fff 45%, #fff 55%, transparent 55%, transparent 90%, #fff 90%, #fff 100%);
     }
 
     &__cards {
@@ -86,7 +87,7 @@
 
         &__cards {
             left: calc(50% - 68px);
-            bottom: -10px;
+            bottom: -23px;
 
             &_akcii {
                 bottom: -43px;

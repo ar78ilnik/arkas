@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Карточка работы</title>
+    <meta charset="utf-8">
+    <title>Контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <base href="dist">
     <link rel="stylesheet" href="css/style.min.css">
@@ -27,17 +27,12 @@
                         <a class="list__link list__link_nav" href="novosti.html">Блог новости</a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link list__link_nav" href="#">Контакты</a>
+                        <a class="list__link list__link_nav">Контакты</a>
                     </li>
                 </ul>
             </div>
             <div class="container container__button">
-                <button class="button button__nav" type="button">
-                    <svg class="icon">
-                        <use xlink:href="img/sprite.svg#burger"></use>
-                    </svg>
-                    Open
-                </button>
+                <button class="button button__nav" type="button">Open</button>
             </div>
             <div class="container container__user">
                 <section class="user">
@@ -70,11 +65,11 @@
                 </section>
             </div>
             <div class="container container__logo">
-                <section class="logo">
+                <div class="logo">
                     <a href="index.html" class="logo__link">
                         <img src="../img/logo.png" alt="" width="71" height="38">
                     </a>
-                </section>
+                </div>
             </div>
             <div class="container container__offer">
                 <ul class="list list_offer">
@@ -94,8 +89,58 @@
             </div>
         </div>
     </header>
-    <main class="main">
-
+    <main class="main main_contacts">
+        <div class="container container_contacts">
+            <section class="contacts">
+                <div class="contacts__adress">
+                    <div class="title__h2 title__h2_novosti">
+                        <span class="title__text">Как нас найти</span>
+                    </div>
+                    <div class="contacts__box">
+                        <h4 class="contacts__box-title">Адрес</h4>
+                        <span class="contacts__text">Краснодар, ул. Суворова, 117</span>
+                    </div>
+                    <div class="contacts__box">
+                        <h4 class="contacts__box-title">Режим работы</h4>
+                        <span class="contacts__text">С понедельника по пятницу, с 9:00 до 18:00</span>
+                    </div>
+                    <div class="contacts__box">
+                        <h4 class="contacts__box-title">Телефон</h4>
+                        <a class="contacts__text" href="tel:8(918)000-00-00">8(918)000-00-00</a>
+                    </div>
+                    <div class="contacts__box">
+                        <h4 class="contacts__box-title">E-mail</h4>
+                        <a class="contacts__text" href="mailto:manager@arkas.com">manager@arkas.com</a>
+                    </div>
+                    <section class="social social_contacts">
+                        <ul class="list list_contacts">
+                            <li class="list__item list__item_contacts">
+                                <a href="#" class="list__link list__link_contacts">
+                                    <svg class="icon icon_contacts">
+                                        <use xlink:href="img/sprite.svg#youtube"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                            <li class="list__item list__item_contacts">
+                                <a href="#" class="list__link list__link_contacts">
+                                    <svg class="icon icon_contacts">
+                                        <use xlink:href="img/sprite.svg#instagram"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                            <li class="list__item list__item_contacts">
+                                <a href="#" class="list__link list__link_contacts">
+                                    <svg class="icon icon_contacts">
+                                        <use xlink:href="img/sprite.svg#facebook"></use>
+                                    </svg>
+                                    Instagram</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="contacts__map"></div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <ul class="list list_footer">
@@ -114,6 +159,7 @@
         </ul>
         <div class="footer__info">
             <section class="user user_footer">
+                <!--
                 <div class="user__adress">
                     <div class="map__adress" itemscope itemtype="http://schema.org/Organization">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -124,6 +170,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <a class="user__link_footer" href="tel:8(918)000-00-00">8(918)000-00-00</a>
                 <section class="social social_footer">
                     <ul class="list list_footer-social">
